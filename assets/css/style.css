@@ -340,7 +340,19 @@ ol {
 }
 
 .tab-wrapper {
-  border: 1px solid var(--gray-color);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+.tab-wrapper .nav-pills .nav-link {
+  font-weight: 600;
+  border-right: 1px solid var(--gray-color);
+}
+.tab-wrapper .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  width: 100%;
+}
+.tab-btn-wrapper {
+  background-color: var(--bg-color);
 }
 .tab-btn-wrapper {
   border-bottom: 1px solid var(--gray-color);
@@ -378,9 +390,14 @@ ol {
   border-radius: 5px;
   height: 100%;
 }
+.post-sidebar .plugin  {
+  width: 100%;
+}
 .post-sidebar h2 {
   font-size: 25px;
-  margin-bottom: 20px;
+  padding: 20px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
 }
 .sidebar-card {
   padding: 30px;
