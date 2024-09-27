@@ -2,18 +2,15 @@ jQuery(document).ready(function ($) {
     "use strict";
   
     const SCROLL_OFFSET = 250;
-  
-    // For the header scroll
-    if ($(window).scrollTop() > SCROLL_OFFSET) {
-      $(".header-main").addClass("sticky");
-    }
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > SCROLL_OFFSET) {
-        $(".header-main").addClass("sticky");
-      } else {
-        $(".header-main").removeClass("sticky");
-      }
-    });
+
+// Scroll event listener
+$(window).on("scroll", function() {
+  if ($(this).scrollTop() > SCROLL_OFFSET) {
+    $(".main-header").addClass("sticky");
+  } else {
+    $(".main-header").removeClass("sticky");
+  }
+});
   
     $(".nav .menu").slicknav({
       appendTo: ".header-offcanvas .offcanvas-body",
@@ -27,7 +24,7 @@ jQuery(document).ready(function ($) {
     });
     $(".nav .menu").slicknav("open");
   
-    var swiper = new Swiper(".banner", {
+    const banner = new Swiper(".swiper", {
       loop: true,
       speed: 800,
       autoplay: {
@@ -43,5 +40,29 @@ jQuery(document).ready(function ($) {
         clickable: true,
       },
     });
+
+
+    // const swiper = new Swiper('.swiper', {
+    //   // Optional parameters
+  
+    //   loop: true,
+    
+    //   // If we need pagination
+    //   pagination: {
+    //     el: '.swiper-pagination',
+    //   },
+    
+    //   // Navigation arrows
+    //   navigation: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev',
+    //   },
+    
+    //   // And if we need scrollbar
+    //   scrollbar: {
+    //     el: '.swiper-scrollbar',
+    //   },
+    // });
+
   });
   
