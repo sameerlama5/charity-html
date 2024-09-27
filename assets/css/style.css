@@ -139,9 +139,7 @@ ol {
   border-radius: 5px;
 }
 .block {
-  --_spacing: 100px;
-  padding-top: var(--_spacing);
-  padding-bottom: var(--_spacing);
+  padding: 30px 0;
 }
 .card {
   background-color: transparent;
@@ -202,13 +200,16 @@ ol {
 .social-media a:hover {
   transform: translateY(-6px);
 }
+.site-logo img {
+  width: 80px;
+}
 .site-header {
   box-shadow: 0 13px 20px 0 rgba(0, 0, 0, 0.05);
 }
 .nav ul li a {
   font-size: 18px;
   font-weight: 500;
-  padding: 30px 0;
+  padding: 35px 0;
   display: block;
   text-transform: uppercase;
 }
@@ -305,7 +306,7 @@ ol {
   display: block;
 }
 .event-news h2 {
-  font-size: 30px;
+  font-size: 25px;
   margin-bottom: 20px;
 }
 .event-card {
