@@ -343,6 +343,7 @@ ol {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
 }
 .tab-wrapper .nav-pills .nav-link {
+  width: 100%;
   font-weight: 600;
   border-right: 1px solid var(--gray-color);
 }
