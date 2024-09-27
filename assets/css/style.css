@@ -194,6 +194,10 @@ ol {
   transition: var(--transition);
   box-shadow: 0 13px 20px 0 rgba(0, 0, 0, 0.05)
 }
+.site-logo h2 a {
+  text-transform: uppercase;
+  font-size: 30px;
+}
 .social-media a {
   color: var(--white-color);
 }
@@ -390,9 +394,18 @@ ol {
   font-size: 18px;
   color: var(--black-color);
 }
-
+.site-footer {
+  padding: 50px 0;
+  background-color: var(--primary-color);
+}
+.site-footer h2 a {
+  color: var(--white-color);
+}
+.site-footer h6 {
+  color: var(--white-color);
+}
 .footer-quick-link li a {
-  color: var(--black-color);
+  color: var(--white-color);
   padding-bottom: 15px;
   display: block;
   text-transform: capitalize;
@@ -400,14 +413,14 @@ ol {
   font-weight: 500;
 }
 .footer-quick-link li a:hover {
-  color: var(--primary-color);
+  color: var(--light-color);
 }
 .footer-social a {
-  color: var(--black-color);
+  color: var(--white-color);
   font-size: 20px;
 }
 .footer-social a:hover {
-  color: var(--primary-color);
+  color: var(--light-color);
   transform: translateY(-6px);
   
 }
@@ -424,12 +437,15 @@ ol {
   flex-shrink: 0;
   width: 40px;
   height: 40px;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: var(--white-color);
   border-radius: 5px;
 }
+.footer-contact-info li p {
+  color: var(--white-color);
+}
 .footer-contact-info li a {
-  color: var(--black-color);
+  color: var(--white-color);
   font-weight: 500;
 }
 .footer-contact-info li a:hover {
