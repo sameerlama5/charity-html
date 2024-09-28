@@ -1,6 +1,5 @@
 jQuery(document).ready(function ($) {
-    "use strict";
-  
+  'use strict';
     const SCROLL_OFFSET = 250;
 
 // Scroll event listener
@@ -24,7 +23,8 @@ $(window).on("scroll", function() {
     });
     $(".nav .menu").slicknav("open");
   
-    const banner = new Swiper(".swiper", {
+    const banner = new Swiper(".banner-swiper", {
+      
       loop: true,
       speed: 800,
       autoplay: {
@@ -39,30 +39,17 @@ $(window).on("scroll", function() {
         el: ".swiper-pagination",
         clickable: true,
       },
+      
     });
 
-
-    // const swiper = new Swiper('.swiper', {
-    //   // Optional parameters
-  
-    //   loop: true,
-    
-    //   // If we need pagination
-    //   pagination: {
-    //     el: '.swiper-pagination',
-    //   },
-    
-    //   // Navigation arrows
-    //   navigation: {
-    //     nextEl: '.swiper-button-next',
-    //     prevEl: '.swiper-button-prev',
-    //   },
-    
-    //   // And if we need scrollbar
-    //   scrollbar: {
-    //     el: '.swiper-scrollbar',
-    //   },
-    // });
-
+    var member = new Swiper('.member-swiper', {
+      slidesPerView: 4, 
+      spaceBetween: 30, 
+      loop: true,
+      navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+      },
+  });
   });
   

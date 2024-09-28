@@ -185,14 +185,14 @@ ol {
 .top-header {
   background-color: var(--primary-color);
 }
-.main-header.sticky{
+.main-header.sticky {
   position: fixed;
   width: 100%;
   top: 0;
   background-color: var(--white-color);
   z-index: 999;
   transition: var(--transition);
-  box-shadow: 0 13px 20px 0 rgba(0, 0, 0, 0.05)
+  box-shadow: 0 13px 20px 0 rgba(0, 0, 0, 0.05);
 }
 .site-logo h2 a {
   text-transform: uppercase;
@@ -347,7 +347,8 @@ ol {
   font-weight: 600;
   border-right: 1px solid var(--gray-color);
 }
-.tab-wrapper .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+.tab-wrapper .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
   background-color: var(--white-color);
   color: var(--primary-color);
   width: 100%;
@@ -391,7 +392,7 @@ ol {
   border-radius: 5px;
   height: 100%;
 }
-.post-sidebar .plugin  {
+.post-sidebar .plugin {
   width: 100%;
 }
 .post-sidebar h2 {
@@ -411,6 +412,28 @@ ol {
 .sidebar-card h3 a {
   font-size: 18px;
   color: var(--black-color);
+}
+
+/* executive member */
+.member-card-content .nav-link {
+  box-shadow: 0 0 23px 0 rgba(0, 0, 0, 0.06);
+}
+.member-card-content .nav-link {
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.member-card-content .tab-content {
+  padding: 20px;
+  box-shadow: 0 0 23px 0 rgba(0, 0, 0, 0.06);
+
+}
+.member-swiper {
+  width: 100%;
+  padding: 0 0 20px 0;
+}
+.member-swiper .swiper-slide {
+  box-shadow: 0 0 23px 0 rgba(0, 0, 0, 0.06);
 }
 .site-footer {
   padding: 50px 0;
@@ -440,7 +463,6 @@ ol {
 .footer-social a:hover {
   color: var(--light-color);
   transform: translateY(-6px);
-  
 }
 .footer-contact-info li {
   display: flex;
