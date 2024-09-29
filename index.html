@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Executive member</title>
+    <title>Tamang Samaj UK</title>
     <link rel="stylesheet" href="./assets/vendors/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/vendors/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="assets/vendors/slicknav/slicknav.min.css">
@@ -15,6 +15,9 @@
 </head>
 
 <body>
+
+    <!-- header html start -->
+
     <header class="site-header">
         <div class="top-header py-2">
             <div class="container">
@@ -31,263 +34,460 @@
                 </div>
             </div>
         </div>
-        <div class="main-header">
+        <div class="main-header navbar-expand-xl">
             <div class="container">
                 <div class="menu-wrapper d-flex justify-content-between align-items-center">
-                    <div class="site-logo">
-                        <a href="/"><img src="./assets/image/tamang-samaj-uk-logo.jpeg" alt="Charity-logo"></a>
+                    <div class="site-logo d-flex align-items-center gap-2">
+                        <a href="./index.html"><img src="./assets/image/tamang-samaj-uk-logo.jpeg"
+                                alt="Charity-logo"></a>
+                        <h2><a href="./index.html">Tamang<span class="fs-5 d-block">Samaj UK</span></a></h2>
                     </div>
-                    <nav class="nav">
-                        <ul class="d-flex flex-wrap gap-5">
-                            <li><a href="./home.html">Home</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="./index.html">executive members</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Contact us</a></li>
-                        </ul>
-                    </nav>
+                    <div class="nav-wrap">
+                        <button class="d-xl-none site-nav-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvas_navigaion" aria-controls="offcanvas_navigaion">
+                            <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M22,17 L22,19 L2,19 L2,17 L22,17 Z M22,11 L22,13 L2,13 L2,11 L22,11 Z M22,5 L22,7 L2,7 L2,5 L22,5 Z"
+                                    fill-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="header-offcanvas offcanvas offcanvas-start" tabindex="-1" id="offcanvas_navigaion" aria-labelledby="offcanvas_navigaion_label">
+                            <div class="offcanvas-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <nav class="header-nav">
+                                    <ul class="d-flex flex-wrap gap-4">
+                                        <li><a href="./index.html">Home</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">News</a></li>
+                                        <li><a href="#">Events</a></li>
+                                        <li><a href="./executive-member.html">executive members</a></li>
+                                        <li><a href="#">Gallery</a></li>
+                                        <li><a href="#">Contact us</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </div>
     </header>
-    <section class="exevutive-member block">
+
+
+    <!-- banner html start -->
+
+    <section class="banner block">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-3">
-                    <h2 class="mb-3">Executive Member</h2>
-                </div>
-            </div>
-            <div class="member-card-content d-flex align-items-start">
-                <div class="nav nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <div class="row w-100">
-                        <div class="col-md-3">
-                            <h3 class="h4">Executive Committees</h3>
-                            <div class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
-                                data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
-                                aria-selected="true">
-                                <img src="./assets/image/2.jpg" alt="member1">
-                                <ul class="member-details pt-3">
-                                    <li class="d-flex gap-2">
-                                        <span class="fw-semibold">Name:</span>
-                                        <p class="mb-2">John Doe</p>
-                                    </li>
-                                    <li class="d-flex gap-2">
-                                        <span class="fw-semibold">date:</span>
-                                        <p class="mb-2">2024/05/20</p>
-                                    </li>
-                                    <li class="d-flex gap-2">
-                                        <span class="fw-semibold">Position:</span>
-                                        <p class="mb-2">CEO</p>
-                                    </li>
-                                </ul>
+            <div class="row -4">
+                <div class="col-xl-9">
+                    <div class="swiper banner-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <figure class="banner-img">
+                                    <img src="./assets/image/1.jpg" alt="banner image">
+                                </figure>
+                                <h1 class="h4">Heading text here</h1>
                             </div>
-                            <div class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
-                                data-bs-target="#v-pills-profile" type="button" role="tab"
-                                aria-controls="v-pills-profile" aria-selected="false">
-                                <img src="./assets/image/2.jpg" alt="member1">
-                                <ul class="member-details pt-3">
-                                    <li class="d-flex gap-2">
-                                        <span class="fw-semibold">Name:</span>
-                                        <p class="mb-2">John Doe</p>
-                                    </li>
-                                    <li class="d-flex gap-2">
-                                        <span class="fw-semibold">date:</span>
-                                        <p class="mb-2">2024/05/20</p>
-                                    </li>
-                                    <li class="d-flex gap-2">
-                                        <span class="fw-semibold">Position:</span>
-                                        <p class="mb-2">CEO</p>
-                                    </li>
-                                </ul>
+                            <div class="swiper-slide">
+                                <figure class="banner-img">
+                                    <img src="./assets/image/2.jpg" alt="banner image">
+                                    <h1 class="h4">Heading text here</h1>
+                                </figure>
                             </div>
-                            <div class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
-                                data-bs-target="#v-pills-messages" type="button" role="tab"
-                                aria-controls="v-pills-messages" aria-selected="false">
-                                <img src="./assets/image/2.jpg" alt="member1">
-                                <ul class="member-details pt-3">
-                                    <li class="d-flex gap-2">
-                                        <span class="fw-semibold">Name:</span>
-                                        <p class="mb-2">John Doe</p>
-                                    </li>
-                                    <li class="d-flex gap-2">
-                                        <span class="fw-semibold">date:</span>
-                                        <p class="mb-2">2024/05/20</p>
-                                    </li>
-                                    <li class="d-flex gap-2">
-                                        <span class="fw-semibold">Position:</span>
-                                        <p class="mb-2">CEO</p>
-                                    </li>
-                                </ul>
+                            <div class="swiper-slide">
+                                <figure class="banner-img">
+                                    <img src="./assets/image/3.jpg" alt="banner image">
+                                    <h1 class="h4">Heading text here</h1>
+                                </figure>
                             </div>
-                            <div class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
-                                data-bs-target="#v-pills-settings" type="button" role="tab"
-                                aria-controls="v-pills-settings" aria-selected="false">
-                                <img src="./assets/image/2.jpg" alt="member1">
-                                <ul class="member-details pt-3">
-                                    <li class="d-flex gap-2">
-                                        <span class="fw-semibold">Name:</span>
-                                        <p class="mb-2">John Doe</p>
-                                    </li>
-                                    <li class="d-flex gap-2">
-                                        <span class="fw-semibold">date:</span>
-                                        <p class="mb-2">2024/05/20</p>
-                                    </li>
-                                    <li class="d-flex gap-2">
-                                        <span class="fw-semibold">Position:</span>
-                                        <p class="mb-2">CEO</p>
-                                    </li>
-                                </ul>
+                            <div class="swiper-slide">
+                                <figure class="banner-img">
+                                    <img src="./assets/image/4.jpg" alt="banner image">
+                                    <h1 class="h4">Heading text here</h1>
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure class="banner-img">
+                                    <img src="./assets/image/5.jpg " alt="banner image">
+                                    <h1 class="h4">Heading text here</h1>
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure class="banner-img">
+                                    <img src="./assets/image/6.jpg" alt="banner image">
+                                    <h1 class="h4">Heading text here</h1>
+                                </figure>
                             </div>
                         </div>
-                        <div class="col-md-9">
-                            <div class="tab-content" id="v-pills-tabContent">
-                                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
-                                    aria-labelledby="v-pills-home-tab" tabindex="0">
-                                    <h2 class="h4 text-center mb-4">Executive Committee From Date to Date Members</h2>
-
-                                    <div class="swiper member-swiper">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-button-next"></div>
-                                        <div class="swiper-button-prev"></div>
-                                    </div>
-                                </div>
-
-                                <!-- Other tabs -->
-                                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
-                                    aria-labelledby="v-pills-profile-tab" tabindex="0">
-                                    <h2 class="h4 text-center mb-4">Executive Committee From Date to Date Members</h2>
-
-                                    <div class="swiper member-swiper">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-button-next"></div>
-                                        <div class="swiper-button-prev"></div>
-                                    </div>
-                                </div>
-
-                                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
-                                    aria-labelledby="v-pills-messages-tab" tabindex="0">
-                                    <h2 class="h4 text-center mb-4">Executive Committee From Date to Date Members</h2>
-
-                                    <div class="swiper member-swiper">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-button-next"></div>
-                                        <div class="swiper-button-prev"></div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
-                                    aria-labelledby="v-pills-settings-tab" tabindex="0">
-                                    <h2 class="h4 text-center mb-4">Executive Committee From Date to Date Members</h2>
-
-                                    <div class="swiper member-swiper">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-button-next"></div>
-                                        <div class="swiper-button-prev"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="banner-sidebar">
+                        <form class="search">
+                            <input type="search" placeholder="Search">
+                            <i class="fas fa-search"></i>
+                        </form>
+                        <ul class="committee-members">
+                            <li>
+                                <a href="#">executive committee</a>
+                            </li>
+                            <li>
+                                <a href="#">executive committee</a>
+                            </li>
+                            <li>
+                                <a href="#">executive committee</a>
+                            </li>
+                            <li>
+                                <a href="#">executive committee</a>
+                            </li>
+                            <li>
+                                <a href="#">executive committee</a>
+                            </li>
 
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- start event and News -->
+
+
+    <section class="event-news block pt-0">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 pe-3">
+                    <div class="card event-card top-border-blue">
+                        <div class="card-heading d-flex justify-content-between align-items-center py-3 px-4">
+                            <h3 class="mb-0"><a href="#">Events</a></h3>
+                            <a class="circle-bg-blue" href="#" class="greter-icon">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <img src="./assets/image/7.jpg" alt="image">
+                        <ul class="event-list">
+                            <li>
+                                <h3><a href="#">Event 1</h3></a>
+                                <span>Date: 12/12/2022</span>
+                            </li>
+                            <li>
+                                <h3><a href="#">Event 1</h3></a>
+                                <span>Date: 12/12/2022</span>
+                            </li>
+                            <li>
+                                <h3><a href="#">Event 1</h3></a>
+                                <span>Date: 12/12/2022</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 px-3">
+                    <div class="card event-card top-border-red">
+                        <div class="card-heading d-flex justify-content-between align-items-center py-3 px-4">
+                            <h3 class="mb-0"><a href="#">News</a></h3>
+                            <a class="circle-bg-red" href="#" class="greter-icon">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <img src="./assets/image/7.jpg" alt="image">
+                        <ul class="event-list">
+                            <li>
+                                <h3><a href="#">News 1</a></h3>
+                                <span>Date: 12/12/2022</span>
+                            </li>
+                            <li>
+                                <h3><a href="#">News 1</a></h3>
+                                <span>Date: 12/12/2022</span>
+                            </li>
+                            <li>
+                                <h3><a href="#">News 1</a></h3>
+                                <span>Date: 12/12/2022</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 px-3">
+                    <div class="card event-card top-border-blue">
+                        <div class="card-heading d-flex justify-content-between align-items-center py-3 px-4">
+                            <h3 class="mb-0"><a href="#">Culture</a></h3>
+                            <a class="circle-bg-blue" href="#" class="greter-icon">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <img src="./assets/image/7.jpg" alt="image">
+                        <ul class="event-list">
+                            <li>
+                                <h3><a href="#">Event 1</h3></a>
+                                <span>Date: 12/12/2022</span>
+                            </li>
+                            <li>
+                                <h3><a href="#">Event 1</h3></a>
+                                <span>Date: 12/12/2022</span>
+                            </li>
+                            <li>
+                                <h3><a href="#">Event 1</h3></a>
+                                <span>Date: 12/12/2022</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3 ps-3">
+                    <div class="card event-card top-border-blue">
+                        <div class="card-heading d-flex justify-content-between align-items-center py-3 px-4">
+                            <h3 class="mb-0"><a href="#">Gallery</a></h3>
+                            <a class="circle-bg-red" href="#" class="greter-icon">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <img src="./assets/image/7.jpg" alt="image">
+                        <ul class="event-list">
+                            <li>
+                                <h3><a href="#">Gallery 1</a></h3>
+                                <span>Date: 12/12/2022</span>
+                            </li>
+                            <li>
+                                <h3><a href="#">Gallery 1</a></h3>
+                                <span>Date: 12/12/2022</span>
+                            </li>
+                            <li>
+                                <h3><a href="#">Gallery 1</a></h3>
+                                <span>Date: 12/12/2022</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="block pt-0">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-xl-9">
+                    <div class="tab-wrapper top-border-blue">
+                        <ul class="nav nav-pills mb-3 tab-btn-wrapper" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-form-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-form" type="button" role="tab" aria-controls="pills-form"
+                                    aria-selected="true">Download</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                    aria-controls="pills-profile" aria-selected="false">Emergency Service</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-contact" type="button" role="tab"
+                                    aria-controls="pills-contact" aria-selected="false">Useful links</button>
+                            </li>
+
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane show active fade px-4" id="pills-form" role="tabpanel"
+                                aria-labelledby="pills-form-tab" tabindex="0">
+                                <div class="agency-slector-search d-flex align-items-center gap-4 py-4">
+                                    <select class="slect-option">
+                                        <option>agency 1</option>
+                                        <option>agency 1</option>
+                                        <option>agency 1</option>
+                                        <option>agency 1</option>
+                                        <option>agency 1</option>
+                                        <option>agency 1</option>
+                                        <option>agency 1</option>
+                                        <option>agency 1</option>
+                                        <option>agency 1</option>
+                                        <option>agency 1</option>
+                                    </select>
+                                    <button class="btn btn-primary" type="button">search</button>
+                                </div>
+                                <table class="table table-bordered px-4">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">SN.</th>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Description</th>
+                                            <th scope="col">Department</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                            <td class="text-center"><a href="#"></a><i
+                                                    class="fa-solid fa-download"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                            <td class="text-center"><a href="#"></a><i
+                                                    class="fa-solid fa-download"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>@twitter</td>
+                                            <td>@twitter</td>
+                                            <td>@twitter</td>
+                                            <td class="text-center"><a href="#"></a><i
+                                                    class="fa-solid fa-download"></i></a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab" tabindex="0">
+                                <div class="tab-of-tab d-flex align-items-start">
+                                    <div class="nav flex-shrink-0 align-items-start flex-column nav-pills me-3 tab-btn-wrapper"
+                                        id="v-pills-tab1" role="tablist" aria-orientation="vertical">
+                                        <button class="nav-link active" id="v-pills-home-tab1" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-home1" type="button" role="tab"
+                                            aria-controls="v-pills-home1" aria-selected="true">Helpline Numbers</button>
+                                        <button class="nav-link" id="v-pills-profile-tab1" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-profile1" type="button" role="tab"
+                                            aria-controls="v-pills-profile1" aria-selected="false">Ambulances</button>
+
+                                        <button class="nav-link" id="v-pills-messages-tab1" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-messages1" type="button" role="tab"
+                                            aria-controls="v-pills-messages1" aria-selected="false">Fire
+                                            Brigade</button>
+                                    </div>
+                                    <div class="tab-content w-100" id="v-pills-tabContent1">
+                                        <div class="tab-pane fade show active" id="v-pills-home1" role="tabpanel"
+                                            aria-labelledby="v-pills-home-tab1" tabindex="0">
+                                            <table class="table table-striped">
+
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">SN</th>
+                                                        <th scope="col">Name</th>
+                                                        <th scope="col">Number</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Mark</td>
+                                                        <td>+997 985634231</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Jacob</td>
+                                                        <td>+997 985634231</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-profile1" role="tabpanel"
+                                            aria-labelledby="v-pills-profile-tab1" tabindex="0">
+                                            <table class="table table-striped">
+
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">SN</th>
+                                                        <th scope="col">Name</th>
+                                                        <th scope="col">Number</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Mark</td>
+                                                        <td>+997 985634231</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Jacob</td>
+                                                        <td>+997 985634231</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-messages1" role="tabpanel"
+                                            aria-labelledby="v-pills-messages-tab1" tabindex="0">
+                                            <table class="table table-striped">
+
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">SN</th>
+                                                        <th scope="col">Name</th>
+                                                        <th scope="col">Number</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Mark</td>
+                                                        <td>+997 985634231</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Jacob</td>
+                                                        <td>+997 985634231</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                aria-labelledby="pills-contact-tab" tabindex="0">
+                                <ul class="usefull-links">
+                                    <li>
+                                        <a href="#">link 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">link 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">link 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">link 1</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3">
+                    <div class="post-sidebar">
+                        <h2>Facebook post</h2>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="fb-post">
+                                <iframe
+                                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTamangSamajUk%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=855526203230224"
+                                    width="340" height="500" style="border:none;overflow:hidden" scrolling="no"
+                                    frameborder="0" allowfullscreen="true"
+                                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
     <footer class="site-footer">
         <div class="container">
-            <div class="row">
-                <div class="col-md-3">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 col-xl-3">
                     <div class="site-logo d-flex align-items-center gap-2">
                         <a href="/"><img src="./assets/image/tamang-samaj-uk-logo.jpeg" alt="Charity-logo"></a>
                         <h2><a href="/">Tamang<span class="fs-5 d-block">Samaj UK</span></a></h2>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3 col-xl-3">
                     <h6>Quicks Links</h6>
                     <ul class="footer-quick-link mt-4">
                         <li>
@@ -313,7 +513,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3 col-xl-3">
                     <h6>Social Media</h6>
                     <div class="d-flex footer-social gap-3 mt-4">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -322,7 +522,7 @@
                         <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3 col-xl-3">
                     <h6>Contact Us</h6>
                     <ul class="footer-contact-info mt-4">
                         <li>
@@ -349,9 +549,9 @@
         </div>
     </footer>
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendors/slicknav/jquery.slicknav.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 

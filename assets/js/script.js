@@ -11,7 +11,7 @@ $(window).on("scroll", function() {
   }
 });
   
-    $(".nav .menu").slicknav({
+    $(".header-nav .menu").slicknav({
       appendTo: ".header-offcanvas .offcanvas-body",
       label: "",
       allowParentLinks: true,
@@ -21,7 +21,7 @@ $(window).on("scroll", function() {
         $(".slicknav_btn").remove();
       },
     });
-    $(".nav .menu").slicknav("open");
+    $(".header-nav .menu").slicknav("open");
   
     const banner = new Swiper(".banner-swiper", {
       
@@ -43,12 +43,25 @@ $(window).on("scroll", function() {
     });
 
     var member = new Swiper('.member-swiper', {
-      slidesPerView: 4, 
       spaceBetween: 30, 
       loop: true,
       navigation: {
           nextEl: '.member-swiper .swiper-button-next',
           prevEl: '.member-swiper .swiper-button-prev',
+      },
+      breakpoints: {
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+        1024: {
+          spaceBetween: 30,
+          slidesPerView: 3,
+        },
+        768: {
+          spaceBetween: 30,
+          slidesPerView: 1,
+        },
       },
   });
   });
