@@ -139,7 +139,7 @@ ol {
   border-radius: 5px;
 }
 .tab-pane {
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 .block {
   padding: 30px 0;
@@ -414,7 +414,7 @@ ol {
 .post-sidebar h2 {
   font-size: 25px;
   padding: 20px;
-  background-color: var(--primary-color);
+  background-color: #2a7dbe;
   color: var(--white-color);
 }
 .sidebar-card {
@@ -431,8 +431,15 @@ ol {
 }
 
 /* executive member */
+.member-card-wrapper {
+  height: 430px;
+  overflow-y: scroll;
+}
 .member-card-content .nav-link {
   box-shadow: 0 0 23px 0 rgba(0, 0, 0, 0.06);
+}
+.member-card-content h3, .member-card-content h2 {
+  color: var(--primary-color);
 }
 .member-card-content .nav-link {
   width: 100%;
