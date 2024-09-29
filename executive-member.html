@@ -78,20 +78,19 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-3">
-                    <h2 class="mb-3 text-center">Executive Member</h2>
                 </div>
             </div>
             <div class="member-card-content d-flex align-items-start">
-                <div class="nav nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <div class="nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <div class="row g-4">
                         <div class="col-md-6 col-lg-3">
                             <h3 class="h4">Executive Committees</h3>
                             <div class="member-card-wrapper">
-                                <div class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
-                                    aria-selected="true">
+                                <div class="d-flex flex-shrink-0 d-md-block">
                                     <img src="./assets/image/2.jpg" alt="member1">
-                                    <ul class="member-details pt-3">
+                                    <ul class="member-details pt-3 nav-link active id=" v-pills-home-tab"
+                                        data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab"
+                                        aria-controls="v-pills-home" aria-selected="true">
                                         <li class="d-flex gap-2">
                                             <span class="fw-semibold">Name:</span>
                                             <p class="mb-2">John Doe</p>
@@ -106,11 +105,11 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-profile" type="button" role="tab"
-                                    aria-controls="v-pills-profile" aria-selected="false">
+                                <div class="d-flex flex-shrink-0 d-md-block">
                                     <img src="./assets/image/2.jpg" alt="member1">
-                                    <ul class="member-details pt-3">
+                                    <ul class="member-details pt-3 nav-link id=" v-pills-profile-tab"
+                                        data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab"
+                                        aria-controls="v-pills-profile" aria-selected="false">
                                         <li class="d-flex gap-2">
                                             <span class="fw-semibold">Name:</span>
                                             <p class="mb-2">John Doe</p>
@@ -125,11 +124,11 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-messages" type="button" role="tab"
-                                    aria-controls="v-pills-messages" aria-selected="false">
+                                <div class="d-flex flex-shrink-0 d-md-block">
                                     <img src="./assets/image/2.jpg" alt="member1">
-                                    <ul class="member-details pt-3">
+                                    <ul class="member-details pt-3 nav-link" id="v-pills-messages-tab"
+                                        data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button"
+                                        role="tab" aria-controls="v-pills-messages" aria-selected="false">
                                         <li class="d-flex gap-2">
                                             <span class="fw-semibold">Name:</span>
                                             <p class="mb-2">John Doe</p>
@@ -144,11 +143,11 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-settings" type="button" role="tab"
-                                    aria-controls="v-pills-settings" aria-selected="false">
+                                <div class="d-flex flex-shrink-0 d-md-block">
                                     <img src="./assets/image/2.jpg" alt="member1">
-                                    <ul class="member-details pt-3">
+                                    <ul class="nav-link member-details pt-3" id="v-pills-settings-tab"
+                                        data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button"
+                                        role="tab" aria-controls="v-pills-settings" aria-selected="false">
                                         <li class="d-flex gap-2">
                                             <span class="fw-semibold">Name:</span>
                                             <p class="mb-2">John Doe</p>
@@ -166,132 +165,801 @@
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-9">
-                            <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-details tab-content" id="v-pills-tabContent">
                                 <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                                     aria-labelledby="v-pills-home-tab" tabindex="0">
                                     <h2 class="h4 text-center mb-4">Executive Committee From Date to Date Members</h2>
 
-                                    <div class="swiper member-swiper">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
+                                    <div class="row justify-content-center g-4 align-items-center">
+                                        <div class=" col-lg-4 col-xl-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <div class="swiper-button-next"></div>
-                                        <div class="swiper-button-prev"></div>
+                                    </div>
+                                    <div class="row justify-content-between g-4 mt-4">
+                                        <div class="col-lg-6 col-xl-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row g-4 mt-4">
+                                        <div class="col-md-6 col-lg-6 col-xl-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6 col-xl-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6 col-xl-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6 col-xl-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6 col-xl-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6 col-xl-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6 col-xl-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6 col-xl-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-
                                 <!-- Other tabs -->
                                 <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
                                     aria-labelledby="v-pills-profile-tab" tabindex="0">
-                                    <h2 class="h4 text-center mb-4">Executive Committee From Date to Date Members</h2>
+                                    <h2 class="h4 text-center mb-4">Executive Committee From Date to Date Members
+                                    </h2>
 
-                                    <div class="swiper member-swiper">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
+                                    <div class="row justify-content-center g-4 align-items-center">
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <div class="swiper-button-next"></div>
-                                        <div class="swiper-button-prev"></div>
+                                    </div>
+                                    <div class="row justify-content-between g-4 mt-4">
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row g-4 mt-4">
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-
                                 <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
                                     aria-labelledby="v-pills-messages-tab" tabindex="0">
-                                    <h2 class="h4 text-center mb-4">Executive Committee From Date to Date Members</h2>
+                                    <h2 class="h4 text-center mb-4">Executive Committee From Date to Date Members
+                                    </h2>
 
-                                    <div class="swiper member-swiper">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
+                                    <div class="row justify-content-center g-4 align-items-center">
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <div class="swiper-button-next"></div>
-                                        <div class="swiper-button-prev"></div>
+                                    </div>
+                                    <div class="row justify-content-between g-4 mt-4">
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row g-4 mt-4">
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
                                     aria-labelledby="v-pills-settings-tab" tabindex="0">
-                                    <h2 class="h4 text-center mb-4">Executive Committee From Date to Date Members</h2>
+                                    <h2 class="h4 text-center mb-4">Executive Committee From Date to Date Members
+                                    </h2>
 
-                                    <div class="swiper member-swiper">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./assets/image/2.jpg" alt="John Doe">
-                                                <h3 class="h4 px-4 py-4">John Doe</h3>
-                                            </div>
+                                    <div class="row justify-content-center g-4 align-items-center">
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <div class="swiper-button-next"></div>
-                                        <div class="swiper-button-prev"></div>
+                                    </div>
+                                    <div class="row justify-content-between g-4 mt-4">
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row g-4 mt-4">
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./assets/image/2.jpg" alt="John Doe">
+                                            <ul class="member-details pt-3">
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Name:</span>
+                                                    <p class="mb-2">John Doe</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">date:</span>
+                                                    <p class="mb-2">2024/05/20</p>
+                                                </li>
+                                                <li class="d-flex gap-2 ">
+                                                    <span class="fw-semibold">Position:</span>
+                                                    <p class="mb-0">CEO</p>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

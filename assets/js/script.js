@@ -39,30 +39,6 @@ $(window).on("scroll", function() {
         el: ".swiper-pagination",
         clickable: true,
       },
-      
     });
-
-    var member = new Swiper('.member-swiper', {
-      spaceBetween: 30, 
-      loop: true,
-      navigation: {
-          nextEl: '.member-swiper .swiper-button-next',
-          prevEl: '.member-swiper .swiper-button-prev',
-      },
-      breakpoints: {
-        1200: {
-          slidesPerView: 4,
-          spaceBetween: 30,
-        },
-        1024: {
-          spaceBetween: 30,
-          slidesPerView: 3,
-        },
-        768: {
-          spaceBetween: 30,
-          slidesPerView: 1,
-        },
-      },
-  });
   });
   
