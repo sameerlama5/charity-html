@@ -47,8 +47,8 @@ $(window).on("scroll", function() {
       spaceBetween: 30, 
       loop: true,
       navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '.member-swiper .swiper-button-next',
+          prevEl: '.member-swiper .swiper-button-prev',
       },
   });
   });

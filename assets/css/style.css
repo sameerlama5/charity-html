@@ -426,7 +426,6 @@ ol {
 .member-card-content .tab-content {
   padding: 20px;
   box-shadow: 0 0 23px 0 rgba(0, 0, 0, 0.06);
-
 }
 .member-swiper {
   width: 100%;
@@ -434,6 +433,37 @@ ol {
 }
 .member-swiper .swiper-slide {
   box-shadow: 0 0 23px 0 rgba(0, 0, 0, 0.06);
+}
+.member-swiper .swiper-button-next,
+.member-swiper .swiper-button-prev {
+  height: 30px;
+  width: 20px;
+  background-color: var(--white-color);
+  opacity: 0;
+  transition: var(--transition);
+}
+.member-swiper:hover .swiper-button-next,
+.member-swiper:hover .swiper-button-prev {
+  opacity: 1;
+}
+.member-swiper .swiper-button-next::after,
+.member-swiper .swiper-button-prev::after {
+  font-size: 14px;
+  opacity: 0;
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+.member-swiper:hover .swiper-button-next::after,
+.member-swiper:hover .swiper-button-prev::after {
+  opacity: 1;
+}
+.member-swiper .swiper-button-next:hover::after,
+.member-swiper .swiper-button-prev:hover::after {
+  color: var(--white-color);
+}
+.member-swiper .swiper-button-next:hover,
+.member-swiper .swiper-button-prev:hover {
+  background-color: var(--primary-color);
 }
 .site-footer {
   padding: 50px 0;
