@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="./assets/vendors/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/vendors/slicknav/slicknav.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/image/tamang-samaj-uk-logo.svg">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="top-header py-2">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="reg-number">
+                        <p class="mb-0 text-white fw-medium">Reg.No. 12342434</p>
+                    </div>
+                    <div class="social-media d-flex gap-3 align-items-center">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-header navbar-expand-xl">
+            <div class="container">
+                <div class="menu-wrapper d-flex justify-content-between align-items-center">
+                    <div class="site-logo d-flex align-items-center gap-2">
+                        <a href="./index.html"><img src="./assets/image/tamang-samaj-uk-logo.jpeg"
+                                alt="Charity-logo"></a>
+                        <h2><a href="./index.html">Tamang<span class="fs-5 d-block">Samaj UK</span></a></h2>
+                    </div>
+                    <div class="nav-wrap">
+                        <button class="d-xl-none site-nav-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvas_navigaion" aria-controls="offcanvas_navigaion">
+                            <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M22,17 L22,19 L2,19 L2,17 L22,17 Z M22,11 L22,13 L2,13 L2,11 L22,11 Z M22,5 L22,7 L2,7 L2,5 L22,5 Z"
+                                    fill-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="header-offcanvas offcanvas offcanvas-start" tabindex="-1" id="offcanvas_navigaion"
+                            aria-labelledby="offcanvas_navigaion_label">
+                            <div class="offcanvas-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <nav class="header-nav">
+                                    <ul class="menu d-flex flex-wrap gap-4">
+                                        <li><a href="./index.html">Home</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">News</a></li>
+                                        <li><a href="./Event.html">Events</a></li>
+                                        <li><a href="./executive-member.html">executive members</a></li>
+                                        <li><a href="./gallery.html">Gallery</a></li>
+                                        <li><a href="#">Contact us</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="gallery block">
+        <div class="container">
+            <div class="gallery-tab-wrapper">
+                <div class="row g-4">
+                    <div class="col-xl-3">
+                        <div class="gallery-category category-sticky">
+                            <h2 class="h4 mb-4">Gallery Category</h2>
+                            <div class="nav flex-column gap-3 p-3 nav-pills align-items-start" id="v-pills-tab"
+                                role="tablist" aria-orientation="vertical">
+                                <button class="nav-link active" id="v-pills-festival-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-festival" type="button" role="tab"
+                                    aria-controls="v-pills-festival" aria-selected="true">Festival</button>
+                                <button class="nav-link" id="v-pills-charity-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-charity" type="button" role="tab"
+                                    aria-controls="v-pills-charity" aria-selected="false">Charity</button>
+                                <button class="nav-link" id="v-pills-cultural-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-cultural" type="button" role="tab"
+                                    aria-controls="v-pills-cultural" aria-selected="false">Cultural</button>
+                                <button class="nav-link" id="v-pills-music-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-music" type="button" role="tab"
+                                    aria-controls="v-pills-music" aria-selected="false">Music</button>
+                                <button class="nav-link" id="v-pills-dance-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-dance" type="button" role="tab"
+                                    aria-controls="v-pills-dance" aria-selected="false">Dance</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9">
+                        <div class="gallery-tab-content">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="v-pills-festival" role="tabpanel"
+                                    aria-labelledby="v-pills-festival-tab" tabindex="0">
+                                    <h2 class="h4 mb-4 text-center">Festival</h2>
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-4 col-xl-4">
+                                            <figure class="card-img">
+                                                <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                    alt="smiling-young-man-with-crossed-arms-outdoors">
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-4">
+                                            <figure class="card-img">
+                                                <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                    alt="smiling-young-man-with-crossed-arms-outdoors">
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-4">
+                                            <figure class="card-img">
+                                                <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                    alt="smiling-young-man-with-crossed-arms-outdoors">
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-4">
+                                            <figure class="card-img">
+                                                <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                    alt="smiling-young-man-with-crossed-arms-outdoors">
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-4">
+                                            <figure class="card-img">
+                                                <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                    alt="smiling-young-man-with-crossed-arms-outdoors">
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-4">
+                                            <figure class="card-img">
+                                                <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                    alt="smiling-young-man-with-crossed-arms-outdoors">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-charity" role="tabpanel"
+                                    aria-labelledby="v-pills-charity-tab" tabindex="0">
+                                    <h2 class="h4 mb-4 text-center">Charity</h2>
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-4 col-xl-4">
+                                            <figure class="card-img">
+                                                <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                    alt="smiling-young-man-with-crossed-arms-outdoors">
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-4">
+                                            <figure class="card-img">
+                                                <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                    alt="smiling-young-man-with-crossed-arms-outdoors">
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-4">
+                                            <figure class="card-img">
+                                                <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                    alt="smiling-young-man-with-crossed-arms-outdoors">
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-4">
+                                            <figure class="card-img">
+                                                <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                    alt="smiling-young-man-with-crossed-arms-outdoors">
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-4">
+                                            <figure class="card-img">
+                                                <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                    alt="smiling-young-man-with-crossed-arms-outdoors">
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-4">
+                                            <figure class="card-img">
+                                                <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                    alt="smiling-young-man-with-crossed-arms-outdoors">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-cultural" role="tabpanel"
+                                    aria-labelledby="v-pills-cultural-tab" tabindex="0">
+                                    <h2 class="h4 mb-4 text-center">Cultural</h2>
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-4 col-xl-4">
+                                            <figure class="card-img">
+                                                <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                    alt="smiling-young-man-with-crossed-arms-outdoors">
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-4">
+                                            <figure class="card-img">
+                                                <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                    alt="smiling-young-man-with-crossed-arms-outdoors">
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-4">
+                                            <figure class="card-img">
+                                                <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                    alt="smiling-young-man-with-crossed-arms-outdoors">
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-4">
+                                            <figure class="card-img">
+                                                <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                    alt="smiling-young-man-with-crossed-arms-outdoors">
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-4">
+                                            <figure class="card-img">
+                                                <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                    alt="smiling-young-man-with-crossed-arms-outdoors">
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-4">
+                                            <figure class="card-img">
+                                                <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                    alt="smiling-young-man-with-crossed-arms-outdoors">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-music" role="tabpanel"
+                                    aria-labelledby="v-pills-music-tab" tabindex="0">
+                                    <h2 class="h4 mb-4 text-center">Music</h2>
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-4 col-xl-4">
+                                            <figure class="card-img">
+                                                <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                    alt="smiling-young-man-with-crossed-arms-outdoors">
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-4">
+                                            <figure class="card-img">
+                                                <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                    alt="smiling-young-man-with-crossed-arms-outdoors">
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-4">
+                                            <figure class="card-img">
+                                                <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                    alt="smiling-young-man-with-crossed-arms-outdoors">
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-4">
+                                            <figure class="card-img">
+                                                <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                    alt="smiling-young-man-with-crossed-arms-outdoors">
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-4">
+                                            <figure class="card-img">
+                                                <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                    alt="smiling-young-man-with-crossed-arms-outdoors">
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-4">
+                                            <figure class="card-img">
+                                                <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                    alt="smiling-young-man-with-crossed-arms-outdoors">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-dance" role="tabpanel"
+                                    aria-labelledby="v-pills-dance-tab" tabindex="0">
+                                    <h2 class="h4 text-center mb-4">Dance</h2>
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-4 col-xl-4">
+                                            <figure class="card-img">
+                                                <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                    alt="smiling-young-man-with-crossed-arms-outdoors">
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-4">
+                                            <figure class="card-img">
+                                                <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                    alt="smiling-young-man-with-crossed-arms-outdoors">
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-4">
+                                            <figure class="card-img">
+                                                <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                    alt="smiling-young-man-with-crossed-arms-outdoors">
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-4">
+                                            <figure class="card-img">
+                                                <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                    alt="smiling-young-man-with-crossed-arms-outdoors">
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-4">
+                                            <figure class="card-img">
+                                                <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                    alt="smiling-young-man-with-crossed-arms-outdoors">
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-4">
+                                            <figure class="card-img">
+                                                <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                    alt="smiling-young-man-with-crossed-arms-outdoors">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 col-xl-3">
+                    <div class="site-logo d-flex align-items-center gap-2">
+                        <a href="/"><img src="./assets/image/tamang-samaj-uk-logo.jpeg" alt="Charity-logo"></a>
+                        <h2><a href="/">Tamang<span class="fs-5 d-block">Samaj UK</span></a></h2>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-3">
+                    <h6>Quicks Links</h6>
+                    <ul class="footer-quick-link mt-4">
+                        <li>
+                            <a href="#">home</a>
+                        </li>
+                        <li>
+                            <a href="#">about us</a>
+                        </li>
+                        <li>
+                            <a href="#">news</a>
+                        </li>
+                        <li>
+                            <a href="#">events</a>
+                        </li>
+                        <li>
+                            <a href="#">executive members</a>
+                        </li>
+                        <li>
+                            <a href="#">gallery</a>
+                        </li>
+                        <li>
+                            <a href="#">contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-3">
+                    <h6>Social Media</h6>
+                    <div class="d-flex footer-social gap-3 mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-3">
+                    <h6>Contact Us</h6>
+                    <ul class="footer-contact-info mt-4">
+                        <li>
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <p class="mb-0 fw-medium">123 Street, City, Country</p>
+                        </li>
+                        <li>
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <a href="tell:+123 456 7890">+123 456 7890</a>
+                        </li>
+                        <li>
+                            <div class="info-icon">
+                                <i class="far fa-envelope"></i>
+                            </div>
+                            <a href="mailto:info@example.com">info@example.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendors/slicknav/jquery.slicknav.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
