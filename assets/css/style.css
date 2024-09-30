@@ -429,6 +429,11 @@ ol {
 }
 
 /* executive member */
+.committee-sticky {
+  position: sticky;
+  top: 0;
+  height: 28%;
+}
 .member-card-wrapper {
   height: 440px;
   overflow-y: scroll;
@@ -600,6 +605,10 @@ ol {
    .member-card-wrapper {
     height: 200px;
     overflow-y: scroll;
+  }
+  .committee-sticky {
+    position: unset;
+    height: unset;
   }
 }
 @media (max-width: 575.98px) {
