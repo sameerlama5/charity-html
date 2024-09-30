@@ -87,7 +87,9 @@ a {
   text-decoration: none;
   transition: var(--transition);
 }
-
+.mt-20 {
+  margin-top: 1px;
+}
 ul,
 ol {
   list-style: none;
@@ -432,10 +434,10 @@ ol {
 .committee-sticky {
   position: sticky;
   top: 0;
-  height: 28%;
+  height: 980px;
 }
 .member-card-wrapper {
-  height: 440px;
+ height: calc(100vh - 70px);
   overflow-y: scroll;
 }
 .member-card-content .nav-link {
