@@ -407,7 +407,7 @@ ol {
 }
 .fb-post iframe {
   width: 100%;
-  height: 300px;
+  height: 500px;
 }
 .post-sidebar h2 {
   font-size: 25px;
@@ -429,10 +429,10 @@ ol {
 }
 
 /* executive member */
-/* .member-card-wrapper {
-  height: 430px;
+.member-card-wrapper {
+  height: 440px;
   overflow-y: scroll;
-} */
+}
 .member-card-content .nav-link {
   box-shadow: 0 0 23px 0 rgba(0, 0, 0, 0.06);
 }
@@ -597,6 +597,10 @@ ol {
     width: 100px;
     object-fit: cover;
    }
+   .member-card-wrapper {
+    height: 200px;
+    overflow-y: scroll;
+  }
 }
 @media (max-width: 575.98px) {
   .tab-wrapper .nav-pills {
