@@ -20,7 +20,7 @@
   --transition: all 0.3s ease-in-out;
   --fs-display-1: clamp(32px, 4vw, 64px);
   --fs-display-2: clamp(24px, 4vw, 40px);
-  --fs-display-3: clamp(22px, 4vw, 28px);
+  --fs-display-3: clamp(18px, 4vw, 28px);
   --fs-display-4: clamp(20px, 4vw, 24px);
   --fs-display-5: clamp(18px, 5vw, 22px);
   --fs-display-6: clamp(16px, 4vw, 18px);
@@ -208,9 +208,12 @@ ol {
 .slicknav_menu {
   display: none;
 }
-.site-logo h2 a {
+.site-logo h3  {
   text-transform: uppercase;
-  font-size: 30px;
+}
+.site-logo span {
+  font-size: 12px;
+  text-transform: capitalize;
 }
 .social-media a {
   color: var(--white-color);
@@ -438,7 +441,7 @@ ol {
   height: 980px;
 }
 .member-card-wrapper {
- height: calc(100vh - 70px);
+  height: calc(100vh - 70px);
   overflow-y: scroll;
 }
 .member-card-content .nav-link {
@@ -449,7 +452,8 @@ ol {
   padding: 30px;
 }
 
-.member-card-content h3, .member-card-content h2 {
+.member-card-content h3,
+.member-card-content h2 {
   color: var(--primary-color);
 }
 .member-card-content .nav-link {
@@ -562,10 +566,148 @@ ol {
   color: var(--black-color);
 }
 .event-link:hover {
-color: var(--primary-color);
+  color: var(--primary-color);
+}
+/* contact */
+.contact h2 {
+  color: var(--primary-color);
+}
+.contact-form input {
+  border: none;
+  padding: 10px 5px;
+  outline: none;
+  border-bottom: 2px solid var(--gray-color);
+  border-radius: 0;
+  background-color: transparent;
+}
+.contact-form textarea {
+  border: none;
+  padding: 10px 5px;
+  outline: none;
+  border-bottom: 2px solid var(--gray-color);
+  border-radius: 0;
+  background-color: transparent;
+  resize: none;
+}
+.contact-form input:focus {
+  background-color: transparent;
+  box-shadow: none;
+}
+.contact-form textarea:focus {
+  background-color: transparent;
+  box-shadow: none;
+}
+.contact-info {
+  padding: 30px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+}
+.location iframe {
+  width: 100%;
+  border-radius: 10px;
+}
+.submit {
+  padding: 10px 30px;
+}
+
+/* about */
+.about h2 {
+  color: var(--primary-color);
+}
+.about h3 {
+  color: var(--secondary-color);
+  font-weight: 400;
+}
+.video {
+  padding: 130px 0;
+  position: relative;
+  background-image: url(../image/smiling-young-man-with-crossed-arms-outdoors.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.video .btn {
+  border-radius: 50%;
+  position: absolute;
+ top: 50%;
+ left: 50%;
+ padding: 0;
+ width: 40px;
+ height: 40px;
+ transform: translate(-50%, -50%);
+}
+.video .btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(42, 125, 190, 0.4);
+  border-radius: 50%;
+  animation: circleGrow 2s linear infinite;
+  z-index: -1;
+}
+.counter-card {
+  border-radius: 10px;
+  color: var(--white-color);
+  padding: 30px;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.vision h2 {
+  color: var(--primary-color);
+}
+.counter-card h3 {
+  font-weight: 500;
+}
+.counter-icon {
+  font-size: 40px;
+  color: var(--white-color);
+}
+@keyframes circleGrow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+.video .modal-body iframe {
+  width: 100%;
+  min-height: 500px; 
+}
+.vision-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.vision-card {
+  border-radius: 10px;
+  padding: 30px 0;
+  border: 1px solid var(--gray-color);
+}
+.vision-card .card-body {
+  text-align: center;
+  padding-bottom: 0;
 }
 /* responsive */
 @media (max-width: 1399.98px) {
+  .header-nav ul li a  {
+    font-size: 14px;
+  }
 }
 @media (max-width: 1199.98px) {
   .header-nav {
@@ -650,8 +792,8 @@ color: var(--primary-color);
   .member-card-wrapper img {
     width: 100px;
     object-fit: cover;
-   }
-   .member-card-wrapper {
+  }
+  .member-card-wrapper {
     height: 200px;
     overflow-y: scroll;
   }
@@ -676,5 +818,4 @@ color: var(--primary-color);
   .banner-sidebar {
     padding: 0;
   }
-
 }
