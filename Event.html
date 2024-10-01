@@ -37,7 +37,8 @@
                     <div class="site-logo d-flex align-items-center gap-3">
                         <a href="./index.html"><img src="./assets/image/tamang-samaj-uk-logo.jpeg"
                                 alt="Charity-logo"></a>
-                        <h3 class="mb-0"><a href="./index.html">Tamang Samaj UK<span class="mt-1 d-block">Charity Reg No:12342434</span></a></h3>
+                        <h3 class="mb-0"><a href="./index.html">Tamang Samaj UK<span class="mt-1 d-block">Charity Reg
+                                    No:12342434</span></a></h3>
                     </div>
                     <div class="nav-wrap">
                         <button class="d-xl-none site-nav-toggler" type="button" data-bs-toggle="offcanvas"
@@ -77,98 +78,881 @@
 
     <section class="events block">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-3">
-                    <h2 class="mb-4 text-center">event</h2>
+            <div class="event-tab-wrapper">
+                <div class="row g-4">
+                    <div class="col-lg-3">
+                        <div class="gallery-category category-sticky">
+                            <h2 class="h4 mb-4">Event Category</h2>
+                            <div class="nav flex-column gap-3 p-3 nav-pills align-items-start" id="v-pills-tab"
+                                role="tablist" aria-orientation="vertical">
+                                <button class="nav-link active" id="v-pills-festival-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-festival" type="button" role="tab"
+                                    aria-controls="v-pills-festival" aria-selected="true">Category 1</button>
+                                <button class="nav-link" id="v-pills-charity-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-charity" type="button" role="tab"
+                                    aria-controls="v-pills-charity" aria-selected="false">Category 2</button>
+                                <button class="nav-link" id="v-pills-cultural-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-cultural" type="button" role="tab"
+                                    aria-controls="v-pills-cultural" aria-selected="false">Category 3</button>
+                                <button class="nav-link" id="v-pills-music-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-music" type="button" role="tab"
+                                    aria-controls="v-pills-music" aria-selected="false">Category 4</button>
+                                <button class="nav-link" id="v-pills-dance-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-dance" type="button" role="tab"
+                                    aria-controls="v-pills-dance" aria-selected="false">Category 5</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="gallery-tab-content">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="v-pills-festival" role="tabpanel"
+                                    aria-labelledby="v-pills-festival-tab" tabindex="0">
+                                    <h2 class="h4 mb-4 text-center">Category 1</h2>
+                                    <div class="row g-4">
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="card event-card">
+                                                <figure class="card-img">
+                                                    <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                        alt="smiling-young-man-with-crossed-arms-outdoors">
+                                                </figure>
+                                                <div class="card-body">
+                                                    <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
+                                                    <span class="mb-1">2024/05/26</span>
+                                                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit.
+                                                        Earum
+                                                        assumenda
+                                                        omnis mollitia nesciunt officia sequi tempore, odio saepe quis,
+                                                        modi
+                                                        fugiat
+                                                        accusamus veniam, minus nostrum adipisci veritatis eos harum
+                                                        iusto.
+                                                    </p>
+                                                    <div class="show-content para">
+                                                        <p class="mb-5 content-para" style="display: none;">Another card content that will be shown when clicked.</p>
+                                                        <a class="event-link show-btn" href="#">Show more</a>
+                                                        <a class="event-link less-btn" href="#" style="display: none;">Less more</a>
+                                                    </div>
+                                                    
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="card event-card">
+                                                <figure class="card-img">
+                                                    <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                        alt="smiling-young-man-with-crossed-arms-outdoors">
+                                                </figure>
+                                                <div class="card-body">
+                                                    <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
+                                                    <span class="mb-1">2024/05/26</span>
+                                                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit.
+                                                        Earum
+                                                        assumenda
+                                                        omnis mollitia nesciunt officia sequi tempore, odio saepe quis,
+                                                        modi
+                                                        fugiat
+                                                        accusamus veniam, minus nostrum adipisci veritatis eos harum
+                                                        iusto.
+                                                    </p>
+                                                    <div class="show-content para">
+                                                        <p class="mb-5 content-para" style="display: none;">Another card content that will be shown when clicked.</p>
+                                                        <a class="event-link show-btn" href="#">Show more</a>
+                                                        <a class="event-link less-btn" href="#" style="display: none;">Less more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="card event-card">
+                                                <figure class="card-img">
+                                                    <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                        alt="smiling-young-man-with-crossed-arms-outdoors">
+                                                </figure>
+                                                <div class="card-body">
+                                                    <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
+                                                    <span class="mb-1">2024/05/26</span>
+                                                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit.
+                                                        Earum
+                                                        assumenda
+                                                        omnis mollitia nesciunt officia sequi tempore, odio saepe quis,
+                                                        modi
+                                                        fugiat
+                                                        accusamus veniam, minus nostrum adipisci veritatis eos harum
+                                                        iusto.
+                                                    </p>
+                                                    <div class="show-content para">
+                                                        <p class="mb-5 content-para" style="display: none;">Another card content that will be shown when clicked.</p>
+                                                        <a class="event-link show-btn" href="#">Show more</a>
+                                                        <a class="event-link less-btn" href="#" style="display: none;">Less more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="card event-card">
+                                                <figure class="card-img">
+                                                    <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                        alt="smiling-young-man-with-crossed-arms-outdoors">
+                                                </figure>
+                                                <div class="card-body">
+                                                    <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
+                                                    <span class="mb-1">2024/05/26</span>
+                                                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit.
+                                                        Earum
+                                                        assumenda
+                                                        omnis mollitia nesciunt officia sequi tempore, odio saepe quis,
+                                                        modi
+                                                        fugiat
+                                                        accusamus veniam, minus nostrum adipisci veritatis eos harum
+                                                        iusto.
+                                                    </p>
+                                                    <div class="show-content para">
+                                                        <p class="mb-5 content-para" style="display: none;">Another card content that will be shown when clicked.</p>
+                                                        <a class="event-link show-btn" href="#">Show more</a>
+                                                        <a class="event-link less-btn" href="#" style="display: none;">Less more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="card event-card">
+                                                <figure class="card-img">
+                                                    <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                        alt="smiling-young-man-with-crossed-arms-outdoors">
+                                                </figure>
+                                                <div class="card-body">
+                                                    <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
+                                                    <span class="mb-1">2024/05/26</span>
+                                                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit.
+                                                        Earum
+                                                        assumenda
+                                                        omnis mollitia nesciunt officia sequi tempore, odio saepe quis,
+                                                        modi
+                                                        fugiat
+                                                        accusamus veniam, minus nostrum adipisci veritatis eos harum
+                                                        iusto.
+                                                    </p>
+                                                    <div class="show-content para">
+                                                        <p class="mb-5 content-para" style="display: none;">Another card content that will be shown when clicked.</p>
+                                                        <a class="event-link show-btn" href="#">Show more</a>
+                                                        <a class="event-link less-btn" href="#" style="display: none;">Less more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="card event-card">
+                                                <figure class="card-img">
+                                                    <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                        alt="smiling-young-man-with-crossed-arms-outdoors">
+                                                </figure>
+                                                <div class="card-body">
+                                                    <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
+                                                    <span class="mb-1">2024/05/26</span>
+                                                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit.
+                                                        Earum
+                                                        assumenda
+                                                        omnis mollitia nesciunt officia sequi tempore, odio saepe quis,
+                                                        modi
+                                                        fugiat
+                                                        accusamus veniam, minus nostrum adipisci veritatis eos harum
+                                                        iusto.
+                                                    </p>
+                                                    <div class="show-content para">
+                                                        <p class="mb-5 content-para" style="display: none;">Another card content that will be shown when clicked.</p>
+                                                        <a class="event-link show-btn" href="#">Show more</a>
+                                                        <a class="event-link less-btn" href="#" style="display: none;">Less more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-charity" role="tabpanel"
+                                    aria-labelledby="v-pills-charity-tab" tabindex="0">
+                                    <h2 class="h4 mb-4 text-center">Category 2</h2>
+                                    <div class="row g-4">
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="card event-card">
+                                                <figure class="card-img">
+                                                    <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                        alt="smiling-young-man-with-crossed-arms-outdoors">
+                                                </figure>
+                                                <div class="card-body">
+                                                    <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
+                                                    <span class="mb-1">2024/05/26</span>
+                                                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit.
+                                                        Earum
+                                                        assumenda
+                                                        omnis mollitia nesciunt officia sequi tempore, odio saepe quis,
+                                                        modi
+                                                        fugiat
+                                                        accusamus veniam, minus nostrum adipisci veritatis eos harum
+                                                        iusto.
+                                                    </p>
+                                                    <div class="show-content para">
+                                                        <p class="mb-5 content-para" style="display: none;">Another card content that will be shown when clicked.</p>
+                                                        <a class="event-link show-btn" href="#">Show more</a>
+                                                        <a class="event-link less-btn" href="#" style="display: none;">Less more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="card event-card">
+                                                <figure class="card-img">
+                                                    <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                        alt="smiling-young-man-with-crossed-arms-outdoors">
+                                                </figure>
+                                                <div class="card-body">
+                                                    <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
+                                                    <span class="mb-1">2024/05/26</span>
+                                                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit.
+                                                        Earum
+                                                        assumenda
+                                                        omnis mollitia nesciunt officia sequi tempore, odio saepe quis,
+                                                        modi
+                                                        fugiat
+                                                        accusamus veniam, minus nostrum adipisci veritatis eos harum
+                                                        iusto.
+                                                    </p>
+                                                    <div class="show-content para">
+                                                        <p class="mb-5 content-para" style="display: none;">Another card content that will be shown when clicked.</p>
+                                                        <a class="event-link show-btn" href="#">Show more</a>
+                                                        <a class="event-link less-btn" href="#" style="display: none;">Less more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="card event-card">
+                                                <figure class="card-img">
+                                                    <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                        alt="smiling-young-man-with-crossed-arms-outdoors">
+                                                </figure>
+                                                <div class="card-body">
+                                                    <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
+                                                    <span class="mb-1">2024/05/26</span>
+                                                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit.
+                                                        Earum
+                                                        assumenda
+                                                        omnis mollitia nesciunt officia sequi tempore, odio saepe quis,
+                                                        modi
+                                                        fugiat
+                                                        accusamus veniam, minus nostrum adipisci veritatis eos harum
+                                                        iusto.
+                                                    </p>
+                                                    <div class="show-content para">
+                                                        <p class="mb-5 content-para" style="display: none;">Another card content that will be shown when clicked.</p>
+                                                        <a class="event-link show-btn" href="#">Show more</a>
+                                                        <a class="event-link less-btn" href="#" style="display: none;">Less more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="card event-card">
+                                                <figure class="card-img">
+                                                    <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                        alt="smiling-young-man-with-crossed-arms-outdoors">
+                                                </figure>
+                                                <div class="card-body">
+                                                    <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
+                                                    <span class="mb-1">2024/05/26</span>
+                                                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit.
+                                                        Earum
+                                                        assumenda
+                                                        omnis mollitia nesciunt officia sequi tempore, odio saepe quis,
+                                                        modi
+                                                        fugiat
+                                                        accusamus veniam, minus nostrum adipisci veritatis eos harum
+                                                        iusto.
+                                                    </p>
+                                                    <div class="show-content para">
+                                                        <p class="mb-5 content-para" style="display: none;">Another card content that will be shown when clicked.</p>
+                                                        <a class="event-link show-btn" href="#">Show more</a>
+                                                        <a class="event-link less-btn" href="#" style="display: none;">Less more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="card event-card">
+                                                <figure class="card-img">
+                                                    <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                        alt="smiling-young-man-with-crossed-arms-outdoors">
+                                                </figure>
+                                                <div class="card-body">
+                                                    <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
+                                                    <span class="mb-1">2024/05/26</span>
+                                                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit.
+                                                        Earum
+                                                        assumenda
+                                                        omnis mollitia nesciunt officia sequi tempore, odio saepe quis,
+                                                        modi
+                                                        fugiat
+                                                        accusamus veniam, minus nostrum adipisci veritatis eos harum
+                                                        iusto.
+                                                    </p>
+                                                    <div class="show-content para">
+                                                        <p class="mb-5 content-para" style="display: none;">Another card content that will be shown when clicked.</p>
+                                                        <a class="event-link show-btn" href="#">Show more</a>
+                                                        <a class="event-link less-btn" href="#" style="display: none;">Less more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="card event-card">
+                                                <figure class="card-img">
+                                                    <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                        alt="smiling-young-man-with-crossed-arms-outdoors">
+                                                </figure>
+                                                <div class="card-body">
+                                                    <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
+                                                    <span class="mb-1">2024/05/26</span>
+                                                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit.
+                                                        Earum
+                                                        assumenda
+                                                        omnis mollitia nesciunt officia sequi tempore, odio saepe quis,
+                                                        modi
+                                                        fugiat
+                                                        accusamus veniam, minus nostrum adipisci veritatis eos harum
+                                                        iusto.
+                                                    </p>
+                                                    <div class="show-content para">
+                                                        <p class="mb-5 content-para" style="display: none;">Another card content that will be shown when clicked.</p>
+                                                        <a class="event-link show-btn" href="#">Show more</a>
+                                                        <a class="event-link less-btn" href="#" style="display: none;">Less more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-cultural" role="tabpanel"
+                                    aria-labelledby="v-pills-cultural-tab" tabindex="0">
+                                    <h2 class="h4 mb-4 text-center">Category 3</h2>
+                                    <div class="row g-4">
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="card event-card">
+                                                <figure class="card-img">
+                                                    <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                        alt="smiling-young-man-with-crossed-arms-outdoors">
+                                                </figure>
+                                                <div class="card-body">
+                                                    <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
+                                                    <span class="mb-1">2024/05/26</span>
+                                                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit.
+                                                        Earum
+                                                        assumenda
+                                                        omnis mollitia nesciunt officia sequi tempore, odio saepe quis,
+                                                        modi
+                                                        fugiat
+                                                        accusamus veniam, minus nostrum adipisci veritatis eos harum
+                                                        iusto.
+                                                    </p>
+                                                    <div class="show-content para">
+                                                        <p class="mb-5 content-para" style="display: none;">Another card content that will be shown when clicked.</p>
+                                                        <a class="event-link show-btn" href="#">Show more</a>
+                                                        <a class="event-link less-btn" href="#" style="display: none;">Less more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="card event-card">
+                                                <figure class="card-img">
+                                                    <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                        alt="smiling-young-man-with-crossed-arms-outdoors">
+                                                </figure>
+                                                <div class="card-body">
+                                                    <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
+                                                    <span class="mb-1">2024/05/26</span>
+                                                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit.
+                                                        Earum
+                                                        assumenda
+                                                        omnis mollitia nesciunt officia sequi tempore, odio saepe quis,
+                                                        modi
+                                                        fugiat
+                                                        accusamus veniam, minus nostrum adipisci veritatis eos harum
+                                                        iusto.
+                                                    </p>
+                                                    <div class="show-content para">
+                                                        <p class="mb-5 content-para" style="display: none;">Another card content that will be shown when clicked.</p>
+                                                        <a class="event-link show-btn" href="#">Show more</a>
+                                                        <a class="event-link less-btn" href="#" style="display: none;">Less more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="card event-card">
+                                                <figure class="card-img">
+                                                    <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                        alt="smiling-young-man-with-crossed-arms-outdoors">
+                                                </figure>
+                                                <div class="card-body">
+                                                    <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
+                                                    <span class="mb-1">2024/05/26</span>
+                                                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit.
+                                                        Earum
+                                                        assumenda
+                                                        omnis mollitia nesciunt officia sequi tempore, odio saepe quis,
+                                                        modi
+                                                        fugiat
+                                                        accusamus veniam, minus nostrum adipisci veritatis eos harum
+                                                        iusto.
+                                                    </p>
+                                                    <div class="show-content para">
+                                                        <p class="mb-5 content-para" style="display: none;">Another card content that will be shown when clicked.</p>
+                                                        <a class="event-link show-btn" href="#">Show more</a>
+                                                        <a class="event-link less-btn" href="#" style="display: none;">Less more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="card event-card">
+                                                <figure class="card-img">
+                                                    <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                        alt="smiling-young-man-with-crossed-arms-outdoors">
+                                                </figure>
+                                                <div class="card-body">
+                                                    <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
+                                                    <span class="mb-1">2024/05/26</span>
+                                                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit.
+                                                        Earum
+                                                        assumenda
+                                                        omnis mollitia nesciunt officia sequi tempore, odio saepe quis,
+                                                        modi
+                                                        fugiat
+                                                        accusamus veniam, minus nostrum adipisci veritatis eos harum
+                                                        iusto.
+                                                    </p>
+                                                 <div class="show-content para">
+                                                        <p class="mb-5 content-para" style="display: none;">Another card content that will be shown when clicked.</p>
+                                                        <a class="event-link show-btn" href="#">Show more</a>
+                                                        <a class="event-link less-btn" href="#" style="display: none;">Less more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="card event-card">
+                                                <figure class="card-img">
+                                                    <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                        alt="smiling-young-man-with-crossed-arms-outdoors">
+                                                </figure>
+                                                <div class="card-body">
+                                                    <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
+                                                    <span class="mb-1">2024/05/26</span>
+                                                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit.
+                                                        Earum
+                                                        assumenda
+                                                        omnis mollitia nesciunt officia sequi tempore, odio saepe quis,
+                                                        modi
+                                                        fugiat
+                                                        accusamus veniam, minus nostrum adipisci veritatis eos harum
+                                                        iusto.
+                                                    </p>
+                                                    <div class="show-content para">
+                                                        <p class="mb-5 content-para" style="display: none;">Another card content that will be shown when clicked.</p>
+                                                        <a class="event-link show-btn" href="#">Show more</a>
+                                                        <a class="event-link less-btn" href="#" style="display: none;">Less more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="card event-card">
+                                                <figure class="card-img">
+                                                    <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                        alt="smiling-young-man-with-crossed-arms-outdoors">
+                                                </figure>
+                                                <div class="card-body">
+                                                    <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
+                                                    <span class="mb-1">2024/05/26</span>
+                                                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit.
+                                                        Earum
+                                                        assumenda
+                                                        omnis mollitia nesciunt officia sequi tempore, odio saepe quis,
+                                                        modi
+                                                        fugiat
+                                                        accusamus veniam, minus nostrum adipisci veritatis eos harum
+                                                        iusto.
+                                                    </p>
+                                                    <div class="show-content para">
+                                                        <p class="mb-5 content-para" style="display: none;">Another card content that will be shown when clicked.</p>
+                                                        <a class="event-link show-btn" href="#">Show more</a>
+                                                        <a class="event-link less-btn" href="#" style="display: none;">Less more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-music" role="tabpanel"
+                                    aria-labelledby="v-pills-music-tab" tabindex="0">
+                                    <h2 class="h4 mb-4 text-center">Category 4</h2>
+                                    <div class="row g-4">
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="card event-card">
+                                                <figure class="card-img">
+                                                    <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                        alt="smiling-young-man-with-crossed-arms-outdoors">
+                                                </figure>
+                                                <div class="card-body">
+                                                    <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
+                                                    <span class="mb-1">2024/05/26</span>
+                                                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit.
+                                                        Earum
+                                                        assumenda
+                                                        omnis mollitia nesciunt officia sequi tempore, odio saepe quis,
+                                                        modi
+                                                        fugiat
+                                                        accusamus veniam, minus nostrum adipisci veritatis eos harum
+                                                        iusto.
+                                                    </p>
+                                                    <div class="show-content para">
+                                                        <p class="mb-5 content-para" style="display: none;">Another card content that will be shown when clicked.</p>
+                                                        <a class="event-link show-btn" href="#">Show more</a>
+                                                        <a class="event-link less-btn" href="#" style="display: none;">Less more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="card event-card">
+                                                <figure class="card-img">
+                                                    <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                        alt="smiling-young-man-with-crossed-arms-outdoors">
+                                                </figure>
+                                                <div class="card-body">
+                                                    <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
+                                                    <span class="mb-1">2024/05/26</span>
+                                                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit.
+                                                        Earum
+                                                        assumenda
+                                                        omnis mollitia nesciunt officia sequi tempore, odio saepe quis,
+                                                        modi
+                                                        fugiat
+                                                        accusamus veniam, minus nostrum adipisci veritatis eos harum
+                                                        iusto.
+                                                    </p>
+                                                    <div class="show-content para">
+                                                        <p class="mb-5 content-para" style="display: none;">Another card content that will be shown when clicked.</p>
+                                                        <a class="event-link show-btn" href="#">Show more</a>
+                                                        <a class="event-link less-btn" href="#" style="display: none;">Less more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="card event-card">
+                                                <figure class="card-img">
+                                                    <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                        alt="smiling-young-man-with-crossed-arms-outdoors">
+                                                </figure>
+                                                <div class="card-body">
+                                                    <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
+                                                    <span class="mb-1">2024/05/26</span>
+                                                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit.
+                                                        Earum
+                                                        assumenda
+                                                        omnis mollitia nesciunt officia sequi tempore, odio saepe quis,
+                                                        modi
+                                                        fugiat
+                                                        accusamus veniam, minus nostrum adipisci veritatis eos harum
+                                                        iusto.
+                                                    </p>
+                                                    <div class="show-content para">
+                                                        <p class="mb-5 content-para" style="display: none;">Another card content that will be shown when clicked.</p>
+                                                        <a class="event-link show-btn" href="#">Show more</a>
+                                                        <a class="event-link less-btn" href="#" style="display: none;">Less more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="card event-card">
+                                                <figure class="card-img">
+                                                    <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                        alt="smiling-young-man-with-crossed-arms-outdoors">
+                                                </figure>
+                                                <div class="card-body">
+                                                    <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
+                                                    <span class="mb-1">2024/05/26</span>
+                                                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit.
+                                                        Earum
+                                                        assumenda
+                                                        omnis mollitia nesciunt officia sequi tempore, odio saepe quis,
+                                                        modi
+                                                        fugiat
+                                                        accusamus veniam, minus nostrum adipisci veritatis eos harum
+                                                        iusto.
+                                                    </p>
+                                                    <div class="show-content para">
+                                                        <p class="mb-5 content-para" style="display: none;">Another card content that will be shown when clicked.</p>
+                                                        <a class="event-link show-btn" href="#">Show more</a>
+                                                        <a class="event-link less-btn" href="#" style="display: none;">Less more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="card event-card">
+                                                <figure class="card-img">
+                                                    <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                        alt="smiling-young-man-with-crossed-arms-outdoors">
+                                                </figure>
+                                                <div class="card-body">
+                                                    <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
+                                                    <span class="mb-1">2024/05/26</span>
+                                                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit.
+                                                        Earum
+                                                        assumenda
+                                                        omnis mollitia nesciunt officia sequi tempore, odio saepe quis,
+                                                        modi
+                                                        fugiat
+                                                        accusamus veniam, minus nostrum adipisci veritatis eos harum
+                                                        iusto.
+                                                    </p>
+                                                    <div class="show-content para">
+                                                        <p class="mb-5 content-para" style="display: none;">Another card content that will be shown when clicked.</p>
+                                                        <a class="event-link show-btn" href="#">Show more</a>
+                                                        <a class="event-link less-btn" href="#" style="display: none;">Less more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="card event-card">
+                                                <figure class="card-img">
+                                                    <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                        alt="smiling-young-man-with-crossed-arms-outdoors">
+                                                </figure>
+                                                <div class="card-body">
+                                                    <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
+                                                    <span class="mb-1">2024/05/26</span>
+                                                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit.
+                                                        Earum
+                                                        assumenda
+                                                        omnis mollitia nesciunt officia sequi tempore, odio saepe quis,
+                                                        modi
+                                                        fugiat
+                                                        accusamus veniam, minus nostrum adipisci veritatis eos harum
+                                                        iusto.
+                                                    </p>
+                                                    <div class="show-content para">
+                                                        <p class="mb-5 content-para" style="display: none;">Another card content that will be shown when clicked.</p>
+                                                        <a class="event-link show-btn" href="#">Show more</a>
+                                                        <a class="event-link less-btn" href="#" style="display: none;">Less more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-dance" role="tabpanel"
+                                    aria-labelledby="v-pills-dance-tab" tabindex="0">
+                                    <h2 class="h4 mb-4 text-center">Category 5</h2>
+                                    <div class="row g-4">
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="card event-card">
+                                                <figure class="card-img">
+                                                    <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                        alt="smiling-young-man-with-crossed-arms-outdoors">
+                                                </figure>
+                                                <div class="card-body">
+                                                    <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
+                                                    <span class="mb-1">2024/05/26</span>
+                                                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit.
+                                                        Earum
+                                                        assumenda
+                                                        omnis mollitia nesciunt officia sequi tempore, odio saepe quis,
+                                                        modi
+                                                        fugiat
+                                                        accusamus veniam, minus nostrum adipisci veritatis eos harum
+                                                        iusto.
+                                                    </p>
+                                                    <div class="show-content para">
+                                                        <p class="mb-5 content-para" style="display: none;">Another card content that will be shown when clicked.</p>
+                                                        <a class="event-link show-btn" href="#">Show more</a>
+                                                        <a class="event-link less-btn" href="#" style="display: none;">Less more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="card event-card">
+                                                <figure class="card-img">
+                                                    <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                        alt="smiling-young-man-with-crossed-arms-outdoors">
+                                                </figure>
+                                                <div class="card-body">
+                                                    <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
+                                                    <span class="mb-1">2024/05/26</span>
+                                                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit.
+                                                        Earum
+                                                        assumenda
+                                                        omnis mollitia nesciunt officia sequi tempore, odio saepe quis,
+                                                        modi
+                                                        fugiat
+                                                        accusamus veniam, minus nostrum adipisci veritatis eos harum
+                                                        iusto.
+                                                    </p>
+                                                    <div class="show-content para">
+                                                        <p class="mb-5 content-para" style="display: none;">Another card content that will be shown when clicked.</p>
+                                                        <a class="event-link show-btn" href="#">Show more</a>
+                                                        <a class="event-link less-btn" href="#" style="display: none;">Less more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="card event-card">
+                                                <figure class="card-img">
+                                                    <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                        alt="smiling-young-man-with-crossed-arms-outdoors">
+                                                </figure>
+                                                <div class="card-body">
+                                                    <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
+                                                    <span class="mb-1">2024/05/26</span>
+                                                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit.
+                                                        Earum
+                                                        assumenda
+                                                        omnis mollitia nesciunt officia sequi tempore, odio saepe quis,
+                                                        modi
+                                                        fugiat
+                                                        accusamus veniam, minus nostrum adipisci veritatis eos harum
+                                                        iusto.
+                                                    </p>
+                                                    <div class="show-content para">
+                                                        <p class="mb-5 content-para" style="display: none;">Another card content that will be shown when clicked.</p>
+                                                        <a class="event-link show-btn" href="#">Show more</a>
+                                                        <a class="event-link less-btn" href="#" style="display: none;">Less more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="card event-card">
+                                                <figure class="card-img">
+                                                    <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                        alt="smiling-young-man-with-crossed-arms-outdoors">
+                                                </figure>
+                                                <div class="card-body">
+                                                    <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
+                                                    <span class="mb-1">2024/05/26</span>
+                                                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit.
+                                                        Earum
+                                                        assumenda
+                                                        omnis mollitia nesciunt officia sequi tempore, odio saepe quis,
+                                                        modi
+                                                        fugiat
+                                                        accusamus veniam, minus nostrum adipisci veritatis eos harum
+                                                        iusto.
+                                                    </p>
+                                                    <div class="show-content para">
+                                                        <p class="mb-5 content-para" style="display: none;">Another card content that will be shown when clicked.</p>
+                                                        <a class="event-link show-btn" href="#">Show more</a>
+                                                        <a class="event-link less-btn" href="#" style="display: none;">Less more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="card event-card">
+                                                <figure class="card-img">
+                                                    <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                        alt="smiling-young-man-with-crossed-arms-outdoors">
+                                                </figure>
+                                                <div class="card-body">
+                                                    <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
+                                                    <span class="mb-1">2024/05/26</span>
+                                                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit.
+                                                        Earum
+                                                        assumenda
+                                                        omnis mollitia nesciunt officia sequi tempore, odio saepe quis,
+                                                        modi
+                                                        fugiat
+                                                        accusamus veniam, minus nostrum adipisci veritatis eos harum
+                                                        iusto.
+                                                    </p>
+                                                    <div class="show-content para">
+                                                        <p class="mb-5 content-para" style="display: none;">Another card content that will be shown when clicked.</p>
+                                                        <a class="event-link show-btn" href="#">Show more</a>
+                                                        <a class="event-link less-btn" href="#" style="display: none;">Less more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="card event-card">
+                                                <figure class="card-img">
+                                                    <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
+                                                        alt="smiling-young-man-with-crossed-arms-outdoors">
+                                                </figure>
+                                                <div class="card-body">
+                                                    <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
+                                                    <span class="mb-1">2024/05/26</span>
+                                                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit.
+                                                        Earum
+                                                        assumenda
+                                                        omnis mollitia nesciunt officia sequi tempore, odio saepe quis,
+                                                        modi
+                                                        fugiat
+                                                        accusamus veniam, minus nostrum adipisci veritatis eos harum
+                                                        iusto.
+                                                    </p>
+                                                    <div class="show-content para">
+                                                        <p class="mb-5 content-para" style="display: none;">Another card content that will be shown when clicked.</p>
+                                                        <a class="event-link show-btn" href="#">Show more</a>
+                                                        <a class="event-link less-btn" href="#" style="display: none;">Less more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row g-4">
-                <div class="col-lg-12 col-xxl-6">
-                    <div class="card event-card d-flex flex-column flex-lg-row">
-                        <figure class="card-img">
-                            <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
-                                alt="smiling-young-man-with-crossed-arms-outdoors">
-                        </figure>
-                        <div class="card-body">
-                            <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
-                            <span class="mb-1">2024/05/26</span>
-                            <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum assumenda omnis mollitia nesciunt officia sequi tempore, odio saepe quis, modi fugiat accusamus veniam, minus nostrum adipisci veritatis eos harum iusto.</p>
-                            <a class="event-link" href="#">Read more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12 col-xxl-6">
-                    <div class="card event-card d-flex flex-column flex-lg-row">
-                        <figure class="card-img">
-                            <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
-                                alt="smiling-young-man-with-crossed-arms-outdoors">
-                        </figure>
-                        <div class="card-body">
-                            <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
-                            <span class="mb-1">2024/05/26</span>
-                            <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum assumenda omnis mollitia nesciunt officia sequi tempore, odio saepe quis, modi fugiat accusamus veniam, minus nostrum adipisci veritatis eos harum iusto.</p>
-                            <a class="event-link" href="#">Read more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12 col-xxl-6">
-                    <div class="card event-card d-flex flex-column flex-lg-row">
-                        <figure class="card-img">
-                            <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
-                                alt="smiling-young-man-with-crossed-arms-outdoors">
-                        </figure>
-                        <div class="card-body">
-                            <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
-                            <span class="mb-1">2024/05/26</span>
-                            <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum assumenda omnis mollitia nesciunt officia sequi tempore, odio saepe quis, modi fugiat accusamus veniam, minus nostrum adipisci veritatis eos harum iusto.</p>
-                            <a class="event-link" href="#">Read more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12 col-xxl-6">
-                    <div class="card event-card d-flex flex-column flex-lg-row">
-                        <figure class="card-img">
-                            <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
-                                alt="smiling-young-man-with-crossed-arms-outdoors">
-                        </figure>
-                        <div class="card-body">
-                            <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
-                            <span class="mb-1">2024/05/26</span>
-                            <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum assumenda omnis mollitia nesciunt officia sequi tempore, odio saepe quis, modi fugiat accusamus veniam, minus nostrum adipisci veritatis eos harum iusto.</p>
-                            <a class="event-link" href="#">Read more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12 col-xxl-6">
-                    <div class="card event-card d-flex flex-column flex-lg-row">
-                        <figure class="card-img">
-                            <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
-                                alt="smiling-young-man-with-crossed-arms-outdoors">
-                        </figure>
-                        <div class="card-body">
-                            <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
-                            <span class="mb-1">2024/05/26</span>
-                            <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum assumenda omnis mollitia nesciunt officia sequi tempore, odio saepe quis, modi fugiat accusamus veniam, minus nostrum adipisci veritatis eos harum iusto.</p>
-                            <a class="event-link" href="#">Read more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12 col-xxl-6">
-                    <div class="card event-card d-flex flex-column flex-lg-row">
-                        <figure class="card-img">
-                            <img src="./assets/image/smiling-young-man-with-crossed-arms-outdoors.jpg"
-                                alt="smiling-young-man-with-crossed-arms-outdoors">
-                        </figure>
-                        <div class="card-body">
-                            <h3 class="mb-1 fw-bold"><a href="#">Event name</a></h3>
-                            <span class="mb-1">2024/05/26</span>
-                            <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum assumenda omnis mollitia nesciunt officia sequi tempore, odio saepe quis, modi fugiat accusamus veniam, minus nostrum adipisci veritatis eos harum iusto.</p>
-                            <a class="event-link" href="#">Read more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
 
     <footer class="site-footer">
@@ -239,6 +1023,7 @@
                     </ul>
                 </div>
             </div>
+        </div>
         </div>
     </footer>
     <script src="assets/js/jquery.min.js"></script>
