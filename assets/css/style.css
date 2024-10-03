@@ -775,6 +775,7 @@ ol {
   color: var(--black-color);
 }
 .event-link {
+  margin-top: auto;
   color: var(--secondary-color);
   font-weight: 500;
 }
