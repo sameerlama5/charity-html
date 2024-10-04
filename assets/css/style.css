@@ -623,10 +623,53 @@ ol {
   color: var(--white-color);
 }
 .condolence-swiper {
+  position: relative;
   background-color: var(--white-color);
 }
+.condolence-swiper::after {
+  content: "Sincere regards";
+  text-transform: uppercase;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+}
+
 .condolence-card .card-img {
+  position: relative;
  text-align: center;
+}
+.condolence-card .card-img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 80px;
+  height: 80px;
+  background-image: url(../image/11293400-min.png);
+  z-index:  1;
+  background-size: contain;
+  animation: upDown 2s ease-in-out infinite;
+}
+
+@keyframes upDown {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+.condolence-card .card-img::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+  background-image: url(../image/11293400-min.png);
+  z-index:  1;
+  background-size: contain;
+  animation: upDown 2s ease-in-out infinite;
 }
 
 .condolence-link {
@@ -890,7 +933,7 @@ ol {
   overflow-y: scroll;
 }
 .member-card-content .nav-link {
-  box-shadow: 0 0 23px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0 23px 0 rgba(0, 0, 0, 0.1);
 }
 .tab-details .member-details {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
