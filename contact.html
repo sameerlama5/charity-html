@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Support our mission to make a difference. Join us in empowering communities, providing aid, and creating a better future for those in need.">
+    <meta name="description"
+        content="Support our mission to make a difference. Join us in empowering communities, providing aid, and creating a better future for those in need.">
     <meta name="keywords" content="HTML, CSS, Jquery">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
@@ -21,9 +22,9 @@
     <header class="site-header">
         <div class="top-header py-2">
             <div class="container">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="reg-number">
-                        <p class="mb-0 text-white fw-medium">Reg.No. 12342434</p>
+                <div class="d-flex justify-content-end align-items-center gap-5">
+                    <div class="add-member">
+                       <a class="fw-bold" href="#"><i class="me-1 fa-solid fa-plus"></i>New Member</a>
                     </div>
                     <div class="social-media d-flex gap-3 align-items-center">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -83,64 +84,71 @@
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-8">
-                    <h2 class="h3 mb-4">lets Make The World Better, Together</h2>
-                    <form action="#" class="contact-form">
-                        <div class="row g-4">
-                            <div class="col-md-6 mb-3">
-                                <label for="firstName">First Name*</label>
-                                <input type="text" class="form-control" id="firstName" required>
+                    <div class="contact-content">
+                        <h2 class="h3 mb-4">lets Make The World Better, Together</h2>
+                        <form action="#" class="contact-form">
+                            <div class="row g-4">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName">First Name*</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lasttName">Last Name*</label>
+                                    <input type="text" class="form-control" id="lasttName" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email">Email*</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email">Phone*</label>
+                                    <input type="number" class="form-control" id="phone" required>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <label for="message">Message*</label>
+                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                </div>
+                                <div class="col md-12 mb-3">
+                                    <button type="submit"
+                                        class="d-flex align-items-center gap-3 btn btn-primary submit"><span>Submit</span><i
+                                            class="fa-solid fa-paper-plane"></i></button>
+                                </div>
                             </div>
-                            <div class="col-md-6 mb-3">
-                                <label for="lasttName">Last Name*</label>
-                                <input type="text" class="form-control" id="lasttName" required>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label for="email">Email*</label>
-                                <input type="email" class="form-control" id="email" required>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label for="email">Phone*</label>
-                                <input type="number" class="form-control" id="phone" required>
-                            </div>
-                            <div class="col-md-12 mb-3">
-                                <label for="message">Message*</label>
-                                <textarea class="form-control" id="message" rows="5" required></textarea>
-                            </div>
-                            <div class="col md-12 mb-3">
-                                <button type="submit" class="d-flex align-items-center gap-3 btn btn-primary submit"><span>Submit</span><i class="fa-solid fa-paper-plane"></i></button>
-                            </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
                 <div class="col-lg-4">
-                    <h2 class="h3 mb-4">Contact Info</h2>
-                    <div class="contact-info">
-                        <ul class="footer-contact-info">
-                            <li>
-                                <div class="info-icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <p class="mb-0 fw-medium">123 Street, City, Country</p>
-                            </li>
-                            <li>
-                                <div class="info-icon">
-                                    <i class="fas fa-phone"></i>
-                                </div>
-                                <a href="tel:+1234567890">+123 456 7890</a>
-                            </li>
-                            <li>
-                                <div class="info-icon">
-                                    <i class="far fa-envelope"></i>
-                                </div>
-                                <a href="mailto:info@example.com">info@example.com</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="location mt-4">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.275596868369!2d85.36449667626394!3d27.677875726789267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1b2f668cd14b%3A0x6f46d50cad1f3973!2sProfox%20Studio!5e0!3m2!1sen!2snp!4v1727770144473!5m2!1sen!2snp"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="contact-info-content">
+                        <h2 class="h3 mb-4">Contact Info</h2>
+                        <div class="contact-info">
+                            <ul class="footer-contact-info">
+                                <li>
+                                    <div class="info-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <p class="mb-0 fw-medium">123 Street, City, Country</p>
+                                </li>
+                                <li>
+                                    <div class="info-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <a href="tel:+1234567890">+123 456 7890</a>
+                                </li>
+                                <li>
+                                    <div class="info-icon">
+                                        <i class="far fa-envelope"></i>
+                                    </div>
+                                    <a href="mailto:info@example.com">info@example.com</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="location mt-4">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.275596868369!2d85.36449667626394!3d27.677875726789267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1b2f668cd14b%3A0x6f46d50cad1f3973!2sProfox%20Studio!5e0!3m2!1sen!2snp!4v1727770144473!5m2!1sen!2snp"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -158,7 +166,9 @@
                                     No:12342434</span></a></h3>
                     </div>
                     <div class="footer-content mt-4">
-                        <p class="mb-0 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates architecto neque dolor atque ullam labore! Amet ad deleniti assumenda non voluptates ex velit, voluptatum beatae animi reiciendis dolorum voluptate at.</p>
+                        <p class="mb-0 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
+                            architecto neque dolor atque ullam labore! Amet ad deleniti assumenda non voluptates ex
+                            velit, voluptatum beatae animi reiciendis dolorum voluptate at.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 col-xl-3">

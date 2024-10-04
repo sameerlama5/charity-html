@@ -56,7 +56,20 @@ jQuery(document).ready(function ($) {
       clickable: true,
     },
   });
-
+// condolence slider
+const condolence = new Swiper(".condolence-swiper", {
+  slidesPerView: 1,
+  loop: true,
+  speed: 800,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
   new VenoBox({
     selector: '.venobox',
     numeration: true,
@@ -64,39 +77,39 @@ jQuery(document).ready(function ($) {
     share: true,
     spinner: 'rotating-plane'
 });
-  //   counter
-  var a = 0;
-  $(window).scroll(function () {
-    if (!$(".achievement")[0]) {
-      return;
-    }
-    var oTop = $(".achievement").offset().top - window.innerHeight;
-    if (a == 0 && $(window).scrollTop() > oTop) {
-      $(".counter").each(function () {
-        var $this = $(this),
-          countTo = $this.attr("data-count");
-        $({
-          countNum: $this.text(),
-        }).animate(
-          {
-            countNum: countTo,
-          },
+  // //   counter
+  // var a = 0;
+  // $(window).scroll(function () {
+  //   if (!$(".achievement")[0]) {
+  //     return;
+  //   }
+  //   var oTop = $(".achievement").offset().top - window.innerHeight;
+  //   if (a == 0 && $(window).scrollTop() > oTop) {
+  //     $(".counter").each(function () {
+  //       var $this = $(this),
+  //         countTo = $this.attr("data-count");
+  //       $({
+  //         countNum: $this.text(),
+  //       }).animate(
+  //         {
+  //           countNum: countTo,
+  //         },
 
-          {
-            duration: 5000,
-            easing: "linear",
-            step: function () {
-              $this.text(Math.floor(this.countNum));
-            },
-            complete: function () {
-              $this.text(this.countNum);
-            },
-          }
-        );
-      });
-      a = 1;
-    }
-  });
+  //         {
+  //           duration: 5000,
+  //           easing: "linear",
+  //           step: function () {
+  //             $this.text(Math.floor(this.countNum));
+  //           },
+  //           complete: function () {
+  //             $this.text(this.countNum);
+  //           },
+  //         }
+  //       );
+  //     });
+  //     a = 1;
+  //   }
+  // });
 
   $(".show-btn").click(function (event) {
     event.preventDefault();

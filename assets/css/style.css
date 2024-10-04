@@ -210,7 +210,7 @@ ol {
 }
 
 .dooner-price {
-  color: #198754;
+  color: var(--primary-color);
 }
 
 .date i {
@@ -252,6 +252,12 @@ ol {
 /* start header css */
 .top-header {
   background-color: var(--primary-color);
+}
+.add-member a {
+  color: var(--white-color);
+}
+.add-member a:hover {
+  color: var(--secondary-color);
 }
 .main-header.sticky {
   position: fixed;
@@ -616,6 +622,59 @@ ol {
   background-color: #2a7dbe;
   color: var(--white-color);
 }
+.condolence-swiper {
+  background-color: var(--white-color);
+}
+.condolence-card .card-img {
+ text-align: center;
+}
+
+.condolence-link {
+  width: 94px;
+  margin: 0 auto;
+  position: relative;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+.condolence-link:hover {
+  color: var(--primary-color);
+}
+.condolence-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--secondary-color);
+}
+
+.condolence-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: var(--transition);
+  z-index: 1;
+}
+.condolence-link:hover::before {
+  width: 100%;
+}
+
+.condolence-card .card-img img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.condolence-swiper .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background-color: var(--primary-color);
+}
 /* .banner .swiper-pagination {
   left: 30px;
   bottom: 30px;
@@ -819,6 +878,9 @@ ol {
 .member-card-wrapper .card-body span {
   color: var(--black-color);
 }
+.member-card-wrapper .nav-link.active .card-body .date i {
+  color: var(--white-color);
+}
 .member-card-wrapper .nav-link.active .card-body h3,
 .member-card-wrapper .nav-link.active .card-body span {
   color: var(--white-color);
@@ -834,7 +896,16 @@ ol {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
   padding: 30px;
 }
-.tab-details .card-body {
+.tab-details .tab-pane img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto
+}
+.tab-details .ex-member-card {
+  padding-top: 30px;
+  text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 }
 .tab-details .tab-pane .card-body h3 {
@@ -890,8 +961,8 @@ ol {
   opacity: 1;
 }
 .donors .swiper-pagination-bullet-active {
-  background-color: #198754;
-  border: 2px solid #198754;
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
 }
 /* start gallery css */
 .category-sticky {
@@ -1012,20 +1083,30 @@ ol {
 .contact h2 {
   color: var(--primary-color);
 }
+.contact-content {
+  background-color: var(--white-color);
+  padding: 50px;
+  border-radius: 10px;
+}
+.contact-info-content {
+  background-color: var(--white-color);
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.contact-form label {
+  margin-bottom: 20px;
+}
 .contact-form input {
-  border: none;
   padding: 10px 5px;
   outline: none;
-  border-bottom: 2px solid var(--gray-color);
-  border-radius: 0;
   background-color: transparent;
+  border-color: var(--gray-color);
 }
 .contact-form textarea {
-  border: none;
   padding: 10px 5px;
   outline: none;
-  border-bottom: 2px solid var(--gray-color);
-  border-radius: 0;
+  border-color: var(--gray-color);
   background-color: transparent;
   resize: none;
 }
