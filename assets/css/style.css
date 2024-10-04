@@ -144,7 +144,7 @@ ol {
   overflow-x: auto;
 }
 .block {
-  padding: 30px 0;
+  padding: 60px 0;
 }
 .card {
   background-color: transparent;
@@ -217,7 +217,34 @@ ol {
   font-size: 20px;
   color: var(--primary-color);
 }
-
+.heading-style {
+  position: relative;
+}
+.heading-style::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 0;
+  width: 100%;
+  max-width: 100px;
+  height: 2px;
+  background-color: var(--secondary-color);
+  transition: var(--transition);
+  z-index: 1;
+  animation: growWidth 2s ease-in-out infinite;
+}
+@keyframes growWidth {
+  0% {
+    width: 70px;
+  }
+  50% {
+    width: 100px;
+  }
+  100% {
+    width: 70px;
+  }
+}
 .container {
   max-width: 1850px;
 }
@@ -368,7 +395,6 @@ ol {
   color: var(--white-color);
 }
 
-
 /* welcome */
 .welcome-heading span {
   position: relative;
@@ -377,7 +403,7 @@ ol {
   color: var(--secondary-color);
 }
 .welcome-heading span::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -30px;
   left: 50%;
@@ -386,10 +412,209 @@ ol {
   max-width: 150px;
   height: 2px;
   background-color: var(--secondary-color);
-
 }
 .welcome h2 {
   color: var(--primary-color);
+}
+
+/* community banner */
+.community-banner {
+  position: relative;
+  background-image: url(../image/tamang-samaj-uk-rooter-logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.community-banner:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  opacity: 0.8;
+}
+.community-banner-content {
+  position: relative;
+}
+.community-banner-content h2 {
+  color: var(--white-color);
+}
+.community-banner-content p {
+  color: var(--white-color);
+}
+.community-banner-content .btn {
+  position: relative;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: var(--secondary-color);
+}
+.community-banner-content .btn:hover {
+  color: var(--white-color);
+}
+.community-banner-content .btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--secondary-color);
+}
+.community-banner-content .btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: var(--white-color);
+  transition: var(--transition);
+  z-index: 1;
+}
+.community-banner-content .btn:hover::before {
+  width: 100%;
+}
+
+/* our activity */
+.activity-card {
+  background-color: var(--white-color);
+  border-radius: 10px;
+  box-shadow: 0 0 23px 0 rgba(0, 0, 0, 0.1);
+}
+.activity-icon a {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  background-color: var(--white-color);
+  box-shadow: 0 0 23px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  color: var(--primary-color);
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+}
+.activity-icon a:hover {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+.activity-card:hover .activity-icon a {
+  transform: translateY(-28px);
+  opacity: 1;
+  visibility: visible;
+}
+.activity-card .card-body {
+  margin-top: -20px;
+}
+.activity-card .card-body h4 a {
+  position: relative;
+  padding: 0 0 10px 0;
+  display: inline-flex;
+  color: var(--black-color);
+  margin-bottom: 10px;
+}
+.activity-card .card-body h4 a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--black-color);
+}
+.activity-card .card-body h4 a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--primary-color);
+  transition: var(--transition);
+  z-index: 1;
+}
+.activity-card .card-body h4 a:hover::before {
+  width: 100%;
+}
+.activity-card .card-body h4 a:hover {
+  color: var(--primary-color);
+}
+
+/* event  */
+.upcomming-event-card {
+  background-color: var(--white-color);
+  border-radius: 20px;
+}
+.upcomming-event-card .card-img {
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+}
+.upcomming-event-card .card-img img {
+  transition: var(--transition);
+  aspect-ratio: 2;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+.upcomming-event-card:hover .card-img img {
+  transform: scale(1.1);
+}
+.time i,
+.location i {
+  color: var(--primary-color);
+}
+.upcomming-event-card .card-body h3 a {
+  color: var(--black-color);
+}
+.upcomming-event-card .card-body a {
+  position: relative;
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+.upcomming-event-card .card-body h3 a::after,
+.upcomming-event-card .card-body h3 a::before {
+  content: none;
+}
+.upcomming-event-card .card-body a:hover {
+  color: var(--primary-color);
+}
+
+.upcomming-event-card .card-body a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--secondary-color);
+}
+
+.upcomming-event-card .card-body a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: var(--transition);
+  z-index: 1;
+}
+.upcomming-event-card .card-body a:hover::before {
+  width: 100%;
+}
+
+.condolence-sidebar h2 {
+  font-size: 25px;
+  padding: 20px;
+  background-color: #2a7dbe;
+  color: var(--white-color);
 }
 /* .banner .swiper-pagination {
   left: 30px;
@@ -594,7 +819,8 @@ ol {
 .member-card-wrapper .card-body span {
   color: var(--black-color);
 }
-.member-card-wrapper .nav-link.active .card-body h3, .member-card-wrapper .nav-link.active .card-body span {
+.member-card-wrapper .nav-link.active .card-body h3,
+.member-card-wrapper .nav-link.active .card-body span {
   color: var(--white-color);
 }
 .member-card-wrapper {
@@ -618,7 +844,7 @@ ol {
   font-size: 16px;
 }
 .tab-details .tab-pane .card-body .date span {
- font-size: 12px;
+  font-size: 12px;
 }
 .tab-details .tab-pane h3 {
   color: var(--secondary-color);
@@ -642,7 +868,7 @@ ol {
   padding: 50px 0 80px;
 }
 .donor-card {
-  transition: var(--transition)
+  transition: var(--transition);
 }
 .swiper-slide-active .donor-card {
   border-radius: 10px;
@@ -660,7 +886,7 @@ ol {
   width: 15px;
   height: 15px;
   background-color: transparent;
-  border: 2px solid rgba(0, 0, 0, .4);
+  border: 2px solid rgba(0, 0, 0, 0.4);
   opacity: 1;
 }
 .donors .swiper-pagination-bullet-active {
@@ -682,7 +908,7 @@ ol {
   display: block;
   height: 100%;
 }
-.gallery-tab-content .card-img img{
+.gallery-tab-content .card-img img {
   height: 100%;
   object-fit: cover;
 }
@@ -724,7 +950,7 @@ ol {
   font-weight: 500;
 }
 .footer-quick-link li a:hover {
-  color: var(--light-color);
+  transform: translateX(10px);
 }
 .footer-social a {
   color: var(--white-color);
@@ -759,7 +985,7 @@ ol {
   font-weight: 500;
 }
 .footer-contact-info li a:hover {
-  color: var(--primary-color);
+  transform: translateX(10px);
 }
 /* event css */
 .events h2 {
