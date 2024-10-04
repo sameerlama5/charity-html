@@ -1098,7 +1098,7 @@ ol {
   margin-bottom: 20px;
 }
 .contact-form input {
-  padding: 10px 5px;
+  padding: 10px 20px;
   outline: none;
   background-color: transparent;
   border-color: var(--gray-color);
