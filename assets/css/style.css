@@ -406,18 +406,8 @@ ol {
   position: relative;
   font-size: 22px;
   font-weight: 600;
+  padding-bottom: 30px;
   color: var(--secondary-color);
-}
-.welcome-heading span::after {
-  content: "";
-  position: absolute;
-  bottom: -30px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  max-width: 150px;
-  height: 2px;
-  background-color: var(--secondary-color);
 }
 .welcome h2 {
   color: var(--primary-color);
@@ -615,14 +605,18 @@ ol {
 .upcomming-event-card .card-body a:hover::before {
   width: 100%;
 }
-
+.condolence-sidebar {
+  border-radius: 20px 20px 0 0;
+}
 .condolence-sidebar h2 {
+  border-radius: 20px 20px 0 0;
   font-size: 25px;
   padding: 20px;
   background-color: #2a7dbe;
   color: var(--white-color);
 }
 .condolence-swiper {
+  border-radius: 0 0 20px 20px;
   position: relative;
   background-color: var(--white-color);
 }
