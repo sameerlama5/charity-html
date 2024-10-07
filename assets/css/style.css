@@ -556,6 +556,7 @@ ol {
   transition: var(--transition);
   aspect-ratio: 2;
   object-fit: cover;
+  object-position: center;
   border-radius: 20px 20px 0 0;
 }
 .upcomming-event-card:hover .card-img img {
