@@ -77,6 +77,41 @@ const condolence = new Swiper(".condolence-swiper", {
     share: true,
     spinner: 'rotating-plane'
 });
+var swiper = new Swiper(".eventSwiper", {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  speed: 800,
+  autoplay: {
+    delay: 2000,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+    575: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    991: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1025: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+  },
+});
   // //   counter
   // var a = 0;
   // $(window).scroll(function () {

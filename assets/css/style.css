@@ -1356,6 +1356,45 @@ select {
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
+
+
+/* event-page css  */
+.event-page .card-img img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.event-page .date {
+  padding-top: 15px;
+}
+.eventSwiper .swiper-button-next,
+.eventSwiper .swiper-button-prev {
+  width: 40px;
+  height: 55px;
+  border-radius: 5px;
+  background-color: var(--white-color);
+  transition: var(--transition);
+  opacity: 0;
+}
+.eventSwiper:hover .swiper-button-next,
+.eventSwiper:hover .swiper-button-prev {
+  opacity: 1;
+}
+.eventSwiper  .swiper-button-next:after, .eventSwiper  .swiper-button-prev:after {
+  font-size: 16px;
+  color: var(--primary-color);
+  font-weight: 900;
+}
+.eventSwiper .swiper-button-next:hover, .eventSwiper .swiper-button-prev:hover {
+  background-color: var(--secondary-color);
+}
+.eventSwiper .swiper-button-next:hover::after, .eventSwiper .swiper-button-prev:hover::after {
+  color: var(--white-color);
+}
+.eventSwiper .card-img img {
+  border-radius: 10px;
+}
 /* responsive */
 @media (max-width: 1399.98px) {
   .header-nav ul li a {
