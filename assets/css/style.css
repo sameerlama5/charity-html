@@ -634,35 +634,41 @@ ol {
 
 .condolence-card .card-img {
   position: relative;
- text-align: center;
+  text-align: center;
 }
 .condolence-card .card-img::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 20px;
   width: 80px;
   height: 80px;
   background-image: url(../image/11293400-min.png);
-  z-index:  1;
+  z-index: 1;
   background-size: contain;
   animation: upDown 2s ease-in-out infinite;
 }
 
 @keyframes upDown {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 .condolence-card .card-img::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 20px;
   width: 80px;
   height: 80px;
   background-image: url(../image/11293400-min.png);
-  z-index:  1;
+  z-index: 1;
   background-size: contain;
   animation: upDown 2s ease-in-out infinite;
 }
@@ -793,8 +799,6 @@ ol {
   transition: var(--transition);
 }
 .event-card .card-body {
-  height: 351.34px;
-  overflow-y: auto;
   background-color: var(--white-color);
   transition: var(--transition);
   border-left: 1px solid var(--gray-color);
@@ -939,7 +943,7 @@ ol {
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  margin: 0 auto
+  margin: 0 auto;
 }
 .tab-details .ex-member-card {
   padding-top: 30px;
@@ -1164,7 +1168,7 @@ ol {
 }
 .location iframe {
   width: 100%;
-  height: 298px; 
+  height: 298px;
   border-radius: 10px;
 }
 .submit {
@@ -1274,6 +1278,83 @@ ol {
 .vision-card .card-body {
   text-align: center;
   padding-bottom: 0;
+}
+/* single-page */
+.single.block .card-img {
+  margin-bottom: 16px;
+}
+.single.block .card-img img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.single.block .description {
+  padding-top: 30px;
+}
+.single.block .widget.widget_block {
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.06);
+}
+.single.block .widget h3 {
+  font-size: var(--fs-display-4);
+  margin-bottom: 15px;
+}
+.single.block .widget ul li a {
+  font-size: var(--fs-display-5);
+  color: var(--black-color);
+}
+.single.block .widget ul li {
+  padding: 15px 0;
+}
+.single.block .widget ul li:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* new member css */
+.personal-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.personal-details .form-group input[type="file"] {
+  background-color: var(--white-color);
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.personal-details .form-group input,
+select,
+.address-details .form-group input,
+select, .contact-details .form-group input,
+select {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  -webkit-appearance: none;
+  outline-color: var(--primary-color);
+}
+.personal-details .form-group:first-child {
+  grid-column: span 3;
+}
+.personal-details .form-group:last-child {
+  grid-column: span 3;
+}
+.personal-details .form-group label,
+.address-details .form-group label, .contact-details .form-group label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.contact-details .form-group:nth-child(3) {
+  grid-column: span 2;
+}
+
+.address-details,
+.contact-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
 }
 /* responsive */
 @media (max-width: 1399.98px) {

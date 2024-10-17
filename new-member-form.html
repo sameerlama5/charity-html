@@ -64,7 +64,7 @@
                                     <ul class="menu d-flex flex-wrap gap-4">
                                         <li><a href="./index.html">Home</a></li>
                                         <li><a href="./about.html">About Us</a></li>
-                                        <li><a href="#">News</a></li>
+                                        <li><a href="./news.html">News</a></li>
                                         <li><a href="./Event.html">Events</a></li>
                                         <li><a href="./executive-member.html">Executive Members</a></li>
                                         <li><a href="./gallery.html">Gallery</a></li>
@@ -82,7 +82,12 @@
     </header>
     <section class="new-member block">
         <div class="container">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <div class="row justify-content-center align-items-center g-4 mb-4">
+                <div class="col md-5">
+                    <h2 class="h3 text-center">Membership Registration</h2>
+                </div>
+            </div>
+            <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="personal-tab" data-bs-toggle="tab"
                         data-bs-target="#personal-tab-pane" type="button" role="tab" aria-controls="personal-tab-pane"
@@ -107,51 +112,133 @@
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="personal-tab-pane" role="tabpanel"
                     aria-labelledby="personal-tab" tabindex="0">
-                <form action="#" class="personal-details">
-                    <div class="form-group">
-                        <label for="MmberShipType">MemberShip Type</label>
-                        <select name="Membertype" id="MemberShip">
-                            <option value="member1">Member 1</option>
-                            <option value="member2">Member 2</option>
-                            <option value="member3">Member 3</option>
-                            <option value="member4">Member 4</option>
-                          </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="title">Title</label>
-                        <select name="titleType" id="titleType">
-                            <option value="title1">Title 1</option>
-                            <option value="title2">Title 2</option>
-                            <option value="title3">Title 3</option>
-                            <option value="title4">Title 4</option>
-                          </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="firstName">First Name</label>
-                        <input type="text" name="firstName" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="MiddleName">Middle Name</label>
-                        <input type="text" name="MiddleName" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" name="LastName" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="lastName">Image</label>
-                        <input type="file" name="file" required>
-                    </div>
-                    <button class="btn btn-primary nav-link" id="address-tab" data-bs-toggle="tab" data-bs-target="#address-tab-pane"
-                    type="button" role="tab" aria-controls="address-tab-pane" aria-selected="false">Next</button>
-                </form>
+                    <form action="#" class="personal-details">
+                        <div class="form-group">
+                            <label for="MmberShipType">MemberShip Type</label>
+                            <select name="Membertype" id="MemberShip">
+                                <option value="member1">Member 1</option>
+                                <option value="member2">Member 2</option>
+                                <option value="member3">Member 3</option>
+                                <option value="member4">Member 4</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Title</label>
+                            <select name="titleType" id="titleType">
+                                <option value="title1">Title 1</option>
+                                <option value="title2">Title 2</option>
+                                <option value="title3">Title 3</option>
+                                <option value="title4">Title 4</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="MiddleName">Middle Name</label>
+                            <input type="text" name="MiddleName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="LastName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Image</label>
+                            <input type="file" name="file" required>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary" type="button">Next</button>
+                        </div>
+                    </form>
                 </div>
                 <div class="tab-pane fade" id="address-tab-pane" role="tabpanel" aria-labelledby="address-tab"
-                    tabindex="0">...</div>
+                    tabindex="0">
+                    <form action="#" class="address-details">
+                        <div class="form-group">
+                            <label for="houseNumberName">House Number or Name</label>
+                            <input type="text" placeholder="House Number or Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="street">Street</label>
+                            <input type="text" placeholder="Street" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="locality">Locality</label>
+                            <select name="localityType" id="localityType">
+                                <option value="locality">Locality 1</option>
+                                <option value="locality2">Locality 2</option>
+                                <option value="locality3">Locality 3</option>
+                                <option value="locality4">Locality 4</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="town">Town</label>
+                            <select name="townType" id="townType">
+                                <option value="town1">Town 1</option>
+                                <option value="town2">Town 2</option>
+                                <option value="town3">Town 3</option>
+                                <option value="town4">Town 4</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country</label>
+                            <select name="countryType" id="countryType">
+                                <option value="country1">Country 1</option>
+                                <option value="country2">Country 2</option>
+                                <option value="country3">Country 3</option>
+                                <option value="country4">Country 4</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="PostalCode">Postal Code</label>
+                            <input type="text" placeholder="Postal Code" required>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary" type="button">Next</button>
+                        </div>
+                    </form>
+                </div>
                 <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
-                    tabindex="0">...</div>
+                    tabindex="0">
+                    <form action="#" class="contact-details">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="landLine">Landline</label>
+                            <input type="tel" placeholder="Landline" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mobileNumber">Mobile Number</label>
+                            <input type="text" placeholder="Mobile Number" required>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-group">
+                                <button class="btn btn-primary" type="button">Next</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
                 <div class="tab-pane fade" id="family-tab-pane" role="tabpanel" aria-labelledby="family-tab"
-                    tabindex="0">...</div>
+                    tabindex="0">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="rounded btn btn-primary" id="pills-add-tab" data-bs-toggle="pill" data-bs-target="#pills-add" type="button" role="tab" aria-controls="pills-add" aria-selected="true">Add</button>
+                        </li>
+                      </ul>
+                      
+                      <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show" id="pills-add" role="tabpanel" aria-labelledby="pills-add-tab" tabindex="0">
+                            
+                            <form action="#" class="family-details">
+                               ...
+                            </form>
+                        </div>
+                      </div>
+                      <button class="btn btn-success" type="button">Submit</button>
+                </div>
             </div>
         </div>
     </section>
