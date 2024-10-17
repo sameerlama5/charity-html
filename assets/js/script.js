@@ -129,7 +129,7 @@ jQuery(document).ready(function ($) {
 
   var swiper = new Swiper(".eventSwiper", {
     loop: true,
-    slidesPerView: 4,
+    slidesPerView: 1,
     spaceBetween: 30,
     speed: 800,
     autoplay: {
@@ -138,6 +138,28 @@ jQuery(document).ready(function ($) {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+      },
+      575: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      991: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      1025: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
     },
   });
 });
