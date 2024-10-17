@@ -1280,35 +1280,35 @@ ol {
   padding-bottom: 0;
 }
 /* single-page */
-.single.block .card-img {
+.single .card-img {
   margin-bottom: 16px;
 }
-.single.block .card-img img {
+.single .card-img img {
   height: 500px;
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
-.single.block .description {
+.single .description {
   padding-top: 30px;
 }
-.single.block .widget.widget_block {
+.single .widget.widget_block {
   padding: 30px;
   margin-bottom: 30px;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.06);
 }
-.single.block .widget h3 {
+.single .widget h3 {
   font-size: var(--fs-display-4);
   margin-bottom: 15px;
 }
-.single.block .widget ul li a {
+.single .widget ul li a {
   font-size: var(--fs-display-5);
   color: var(--black-color);
 }
-.single.block .widget ul li {
+.single .widget ul li {
   padding: 15px 0;
 }
-.single.block .widget ul li:not(:last-child) {
+.single .widget ul li:not(:last-child) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
