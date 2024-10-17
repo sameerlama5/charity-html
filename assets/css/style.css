@@ -1273,6 +1273,39 @@ ol {
   text-align: center;
   padding-bottom: 0;
 }
+/* single-page */
+.single.block .card-img {
+  margin-bottom: 16px;
+}
+.single.block .card-img img {
+  height: 315px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.single.block .description {
+  padding-top: 30px;
+}
+.single.block .description p {
+  max-width: 832px;
+}
+.single.block .widget.widget_block {
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.06);
+}
+.single.block .widget h2 {
+  font-size: var(--fs-display-5);
+  margin-bottom: 15px;
+}
+.single.block .widget ul li a {
+  color: var(--black-color);
+}
+.single.block .widget ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
 /* responsive */
 @media (max-width: 1399.98px) {
   .header-nav ul li a {
