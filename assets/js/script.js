@@ -111,19 +111,19 @@ const condolence = new Swiper(".condolence-swiper", {
   //   }
   // });
 
-  $(".show-btn").click(function (event) {
-    event.preventDefault();
-    var para = $(this).closest(".para");
-    para.find(".content-para").show();
-    para.find(".show-btn").hide();
-    para.find(".less-btn").show();
-  });
+  // $(".show-btn").click(function (event) {
+  //   event.preventDefault();
+  //   var para = $(this).closest(".para");
+  //   para.find(".content-para").show();
+  //   para.find(".show-btn").hide();
+  //   para.find(".less-btn").show();
+  // });
 
-  $(".less-btn").click(function (event) {
-    event.preventDefault();
-    var para = $(this).closest(".para");
-    para.find(".content-para").hide();
-    para.find(".show-btn").show();
-    para.find(".less-btn").hide();
-  });
+  // $(".less-btn").click(function (event) {
+  //   event.preventDefault();
+  //   var para = $(this).closest(".para");
+  //   para.find(".content-para").hide();
+  //   para.find(".show-btn").show();
+  //   para.find(".less-btn").hide();
+  // });
 });
