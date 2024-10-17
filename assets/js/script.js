@@ -40,7 +40,7 @@ jQuery(document).ready(function ($) {
     // },
   });
 
-// doner slider
+  // doner slider
   const donner = new Swiper(".donors", {
     slidesPerView: 3,
     spaceBetween: 50,
@@ -56,27 +56,27 @@ jQuery(document).ready(function ($) {
       clickable: true,
     },
   });
-// condolence slider
-const condolence = new Swiper(".condolence-swiper", {
-  slidesPerView: 1,
-  loop: true,
-  speed: 800,
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
+  // condolence slider
+  const condolence = new Swiper(".condolence-swiper", {
+    slidesPerView: 1,
+    loop: true,
+    speed: 800,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
   new VenoBox({
-    selector: '.venobox',
+    selector: ".venobox",
     numeration: true,
     infinigall: true,
     share: true,
-    spinner: 'rotating-plane'
-});
+    spinner: "rotating-plane",
+  });
   // //   counter
   // var a = 0;
   // $(window).scroll(function () {
@@ -125,5 +125,19 @@ const condolence = new Swiper(".condolence-swiper", {
     para.find(".content-para").hide();
     para.find(".show-btn").show();
     para.find(".less-btn").hide();
+  });
+
+  var swiper = new Swiper(".eventSwiper", {
+    loop: true,
+    slidesPerView: 4,
+    spaceBetween: 30,
+    speed: 800,
+    autoplay: {
+      delay: 2000,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
   });
 });

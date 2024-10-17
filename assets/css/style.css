@@ -634,35 +634,41 @@ ol {
 
 .condolence-card .card-img {
   position: relative;
- text-align: center;
+  text-align: center;
 }
 .condolence-card .card-img::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 20px;
   width: 80px;
   height: 80px;
   background-image: url(../image/11293400-min.png);
-  z-index:  1;
+  z-index: 1;
   background-size: contain;
   animation: upDown 2s ease-in-out infinite;
 }
 
 @keyframes upDown {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 .condolence-card .card-img::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 20px;
   width: 80px;
   height: 80px;
   background-image: url(../image/11293400-min.png);
-  z-index:  1;
+  z-index: 1;
   background-size: contain;
   animation: upDown 2s ease-in-out infinite;
 }
@@ -939,7 +945,7 @@ ol {
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  margin: 0 auto
+  margin: 0 auto;
 }
 .tab-details .ex-member-card {
   padding-top: 30px;
@@ -1284,10 +1290,7 @@ ol {
   border-radius: 10px;
 }
 .single.block .description {
-  padding-top: 30px;
-}
-.single.block .description p {
-  max-width: 832px;
+  padding-top: 15px;
 }
 .single.block .widget.widget_block {
   padding: 30px;
@@ -1304,6 +1307,44 @@ ol {
 .single.block .widget ul li {
   padding: 10px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* event-page */
+.event-page .card-img img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.event-page .date {
+  padding-top: 15px;
+}
+.eventSwiper .swiper-button-next,
+.eventSwiper .swiper-button-prev {
+  width: 40px;
+  height: 55px;
+  border-radius: 5px;
+  background-color: var(--white-color);
+  transition: var(--transition);
+  opacity: 0;
+}
+.eventSwiper:hover .swiper-button-next,
+.eventSwiper:hover .swiper-button-prev {
+  opacity: 1;
+}
+.eventSwiper  .swiper-button-next:after, .eventSwiper  .swiper-button-prev:after {
+  font-size: 16px;
+  color: var(--primary-color);
+  font-weight: 900;
+}
+.eventSwiper .swiper-button-next:hover, .eventSwiper .swiper-button-prev:hover {
+  background-color: var(--secondary-color);
+}
+.eventSwiper .swiper-button-next:hover::after, .eventSwiper .swiper-button-prev:hover::after {
+  color: var(--white-color);
+}
+.eventSwiper .card-img img {
+  border-radius: 10px;
 }
 
 /* responsive */
