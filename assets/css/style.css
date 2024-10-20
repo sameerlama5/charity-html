@@ -439,6 +439,7 @@ ol {
 }
 .community-banner-content p {
   color: var(--white-color);
+  max-width: 800px;
 }
 .community-banner-content .btn {
   position: relative;
@@ -1483,6 +1484,7 @@ select {
   }
 }
 @media (max-width: 991.98px) {
+
 }
 @media (max-width: 767.98px) {
   .tab-of-tab {
