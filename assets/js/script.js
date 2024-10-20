@@ -42,7 +42,7 @@ jQuery(document).ready(function ($) {
 
 // doner slider
   const donner = new Swiper(".donors", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 50,
     centeredSlides: true,
     loop: true,
@@ -54,6 +54,24 @@ jQuery(document).ready(function ($) {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 50,
+      },
+      575: {
+        slidesPerView: 2,
+        spaceBetween: 50,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+      991: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
     },
   });
 // condolence slider
@@ -161,4 +179,40 @@ var swiper = new Swiper(".eventSwiper", {
   //   para.find(".show-btn").show();
   //   para.find(".less-btn").hide();
   // });
+
+
+  //memer tab script
+    // Switch to Address Tab using jQuery
+    $('#nextToAddress').on('click', function() {
+      $('#address-tab').tab('show');
+  });
+
+  // Switch to Contact Tab using jQuery
+  $('#nextToContact').on('click', function() {
+      $('#contact-tab').tab('show');
+  });
+  $('#nextToFamily').on('click', function() {
+    $('#family-tab').tab('show');
+});
+$('#familyFormTemplate').click(function(){
+  $('#familyFormTemplate').toggle();
+  $(this).hide(); 
+});
+$('#addBtn').click(function(){
+  var newForm = $('#familyFormTemplate').clone().removeAttr('id').show();
+  $('#formsContainer').append(newForm); 
+  $('#submitContainer').show().appendTo(newForm);
+  newForm.find('.removeBtn').click(function(){
+      $(this).closest('.familyFormInstance').remove();
+      if ($('.familyFormInstance').length === 0) {
+          $('#submitContainer').hide();
+      }
+  });
+});
+
+$('#removeBtn').click(function(){
+  $('#familyForm').hide();
+  $('#addBtn').show(); 
+});
+
 });

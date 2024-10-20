@@ -621,16 +621,6 @@ ol {
   position: relative;
   background-color: var(--white-color);
 }
-.condolence-swiper::after {
-  content: "Sincere regards";
-  text-transform: uppercase;
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  font-size: 20px;
-  font-weight: bold;
-  transform: translate(-50%, -50%);
-}
 
 .condolence-card .card-img {
   position: relative;
@@ -1313,19 +1303,24 @@ ol {
 }
 
 /* new member css */
-.personal-details {
+.personal-details,
+.family-details {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
-.personal-details .form-group input[type="file"] {
+.personal-details .form-group input[type="file"],
+.family-details .form-group input[type="file"] {
   background-color: var(--white-color);
   border: 1px solid rgba(0, 0, 0, 0.4);
 }
 .personal-details .form-group input,
 select,
 .address-details .form-group input,
-select, .contact-details .form-group input,
+select,
+.contact-details .form-group input,
+select,
+.family-details .form-group input,
 select {
   width: 100%;
   padding: 10px 20px;
@@ -1334,14 +1329,19 @@ select {
   -webkit-appearance: none;
   outline-color: var(--primary-color);
 }
-.personal-details .form-group:first-child {
+.personal-details .form-group:first-child,
+.family-details .form-group:first-child {
   grid-column: span 3;
 }
-.personal-details .form-group:last-child {
+.personal-details .form-group:last-child,
+.family-details .form-group:last-child {
   grid-column: span 3;
 }
+
 .personal-details .form-group label,
-.address-details .form-group label, .contact-details .form-group label {
+.address-details .form-group label,
+.contact-details .form-group label,
+.family-details .form-group label {
   display: block;
   margin-bottom: 15px;
 }
@@ -1357,12 +1357,12 @@ select {
   gap: 30px;
 }
 
-
 /* event-page css  */
 .event-page .card-img img {
-  height: 400px;
+  height: 700px;
   width: 100%;
   object-fit: cover;
+  object-position: center;
   border-radius: 10px;
 }
 .event-page .date {
@@ -1381,24 +1381,35 @@ select {
 .eventSwiper:hover .swiper-button-prev {
   opacity: 1;
 }
-.eventSwiper  .swiper-button-next:after, .eventSwiper  .swiper-button-prev:after {
+.eventSwiper .swiper-button-next:after,
+.eventSwiper .swiper-button-prev:after {
   font-size: 16px;
   color: var(--primary-color);
   font-weight: 900;
 }
-.eventSwiper .swiper-button-next:hover, .eventSwiper .swiper-button-prev:hover {
+.eventSwiper .swiper-button-next:hover,
+.eventSwiper .swiper-button-prev:hover {
   background-color: var(--secondary-color);
 }
-.eventSwiper .swiper-button-next:hover::after, .eventSwiper .swiper-button-prev:hover::after {
+.eventSwiper .swiper-button-next:hover::after,
+.eventSwiper .swiper-button-prev:hover::after {
   color: var(--white-color);
 }
 .eventSwiper .card-img img {
   border-radius: 10px;
 }
+
+/*new member css*/
+.new-member .nav .nav-item .nav-link {
+  color: var(--black-color);
+}
 /* responsive */
 @media (max-width: 1399.98px) {
   .header-nav ul li a {
     font-size: 14px;
+  }
+  .time-content {
+    flex-direction: column;
   }
 }
 @media (max-width: 1199.98px) {
@@ -1493,6 +1504,23 @@ select {
     position: unset;
     height: unset;
   }
+  .personal-details,
+  .address-details,
+  .contact-details,
+  .family-details {
+    grid-template-columns: auto;
+  }
+  .personal-details .form-group:first-child,
+.family-details .form-group:first-child {
+  grid-column: unset;
+}
+.personal-details .form-group:last-child,
+.family-details .form-group:last-child {
+  grid-column: unset;
+}
+.contact-details .form-group:nth-child(3) {
+  grid-column: unset;
+}
 }
 @media (max-width: 575.98px) {
   .tab-wrapper .nav-pills {
