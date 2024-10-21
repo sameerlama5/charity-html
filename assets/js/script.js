@@ -1,6 +1,6 @@
 jQuery(document).ready(function ($) {
   "use strict";
-  const SCROLL_OFFSET = 250;
+  const SCROLL_OFFSET = 50;
 
   // Scroll event listener
   $(window).on("scroll", function () {

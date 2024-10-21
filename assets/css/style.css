@@ -1404,6 +1404,10 @@ select {
 .new-member .nav .nav-item .nav-link {
   color: var(--black-color);
 }
+.new-member .nav .nav-item .nav-link.active {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
 /* responsive */
 @media (max-width: 1399.98px) {
   .header-nav ul li a {
@@ -1414,6 +1418,11 @@ select {
   }
 }
 @media (max-width: 1199.98px) {
+  .activity-card .activity-icon a {
+    transform: translateY(-28px);
+    opacity: 1;
+    visibility: visible;
+  }
   .header-nav {
     display: none;
   }
